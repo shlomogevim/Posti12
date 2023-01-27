@@ -16,7 +16,9 @@ class MainActivity : AppCompatActivity() {
         val drawPostHelper = DrawPostHelper()
         val constraintLayout = findViewById<ConstraintLayout>(R.id.constraint_layout)
 
-        val currentPost = CreatePost().createPost4999071()
+
+      //  val currentPost = CreatePost().createPost4999071()
+        val currentPost = FindPost().individualPost()
        // logi("${currentPost.postNum}   ")
         drawPostHelper.drawPost( constraintLayout, currentPost)
 

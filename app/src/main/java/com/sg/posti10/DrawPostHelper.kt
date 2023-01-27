@@ -101,14 +101,17 @@ class DrawPostHelper: AppCompatActivity() {
         val shape = GradientDrawable()
         shape.cornerRadius = post.postRadiuas.toPx().toFloat()
         shape.setColor(Color.parseColor(updateColor(post.postBackground)))
+
+        post.postBackground = post.postBackground.replace("#", "")
+        post.postBackground = post.postBackground.replace("$", "")
+        val tra = helper.getTransfo(post.postTransparency)
+        shape.setColor(Color.parseColor("#$tra${post.postBackground}"))
         textView.background = shape
         val pad =post.postPadding
         textView.setPadding(pad[0].toPx(),pad[1].toPx(), pad[2].toPx(), pad[3].toPx())
-        textView.alpha =post.postTransparency / 10f
         val typeface = helper.getFamilyFont(post.postFontFamily)
         textView.typeface = ResourcesCompat.getFont(layout.context, typeface)
         textView.setLineSpacing(0f, post.lineSpacing)
-
         val layoutParams = LinearLayout.LayoutParams(
             LinearLayout.LayoutParams.WRAP_CONTENT,
             LinearLayout.LayoutParams.WRAP_CONTENT
