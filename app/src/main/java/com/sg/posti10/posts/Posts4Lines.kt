@@ -2,15 +2,17 @@ package com.sg.posti10.posts
 
 import com.sg.posti10.CONSTANT
 import com.sg.posti10.Post
+import com.sg.posti10.Tools
 import com.sg.posti10.Utility
-import com.sg.posti10.Utility1
 
 class Posts4Lines {
     val util=Utility()
+    val tool=Tools()
+
 
     private fun extractPostNumFromFunctionName(): Int {
-        val func = Thread.currentThread().stackTrace.first { it.methodName.startsWith("createPost") }
-        val postNum = func.methodName.substringAfter("createPost").toInt()
+        val func = Thread.currentThread().stackTrace.first { it.methodName.startsWith("loadPost") }
+        val postNum = func.methodName.substringAfter("loadPost").toInt()
         return postNum
     }
     fun loadPost4999060():Post {   //v
@@ -256,10 +258,11 @@ class Posts4Lines {
        return post
     }
 
-    fun createPost4999068(): Post {
+    fun loadPost4999068(): Post {
         val post = Post()
         with(post) {
-            postNum= extractPostNumFromFunctionName()
+            postNum = 4999068
+         //   postNum= extractPostNumFromFunctionName()
             imageUri = "https://cdn.pixabay.com/photo/2019/04/16/23/59/sad-4133121_960_720.jpg"
             postText = arrayListOf(
                 " כדאי שלא תצטער ",
@@ -280,7 +283,7 @@ class Posts4Lines {
         return post
     }
 
-    fun createPost4999069(): Post {
+    fun loadPost4999069(): Post {
         val post = Post()
         with(post) {
             postNum= extractPostNumFromFunctionName()
@@ -303,7 +306,7 @@ class Posts4Lines {
         }
         return post
     }
-    fun createPost4999070(): Post {
+    fun loadPost4999070(): Post {
         val post = Post()
         with(post) {
             postNum= extractPostNumFromFunctionName()
@@ -326,10 +329,10 @@ class Posts4Lines {
         }
         return post
     }
-    fun createPost4999071(): Post {
+    fun loadPost4999071(): Post {
         val post = Post()
         with(post) {
-            postNum= extractPostNumFromFunctionName()
+            postNum= tool.extractPostNumFromFunctionName()
             imageUri ="https://cdn.pixabay.com/photo/2023/01/10/00/17/italy-7708552_960_720.jpg"
             postText = arrayListOf(
                 " זכרון העבר  ",

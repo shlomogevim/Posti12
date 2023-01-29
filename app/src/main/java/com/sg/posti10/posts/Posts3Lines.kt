@@ -2,17 +2,14 @@ package com.sg.posti10.posts
 
 import com.sg.posti10.CONSTANT
 import com.sg.posti10.Post
+import com.sg.posti10.Tools
 import com.sg.posti10.Utility
-import com.sg.posti10.Utility1
 
 class Posts3Lines {
     val util=Utility()
+    val tool=Tools()
 
-    private fun extractPostNumFromFunctionName(): Int {
-        val func = Thread.currentThread().stackTrace.first { it.methodName.startsWith("createPost") }
-        val postNum = func.methodName.substringAfter("createPost").toInt()
-        return postNum
-    }
+
     fun loadPost3999010():Post {
         val post = Post()
         with(post) {
@@ -108,8 +105,7 @@ class Posts3Lines {
     fun loadPost3999013(): Post {
         val post = Post()
         with(post) {
-            postNum = 3999013
-            lineNum = 3
+            postNum=tool.extractPostNumFromFunctionName()
             postText = arrayListOf(
                 " אין בשבילך יופי בעולם ",
                 " מלבד מה שאתה תופס כרגע ",
