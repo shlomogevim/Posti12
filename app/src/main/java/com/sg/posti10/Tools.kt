@@ -9,6 +9,12 @@ class Tools {
         val postNum = func.methodName.substringAfter("loadPost").toInt()
         return postNum
     }
+    fun extractPostNumFromFunctionName1(): Int {
+        val st="demiPost"
+        val func = Thread.currentThread().stackTrace.first { it.methodName.startsWith(st) }
+        val postNum = func.methodName.substringAfter("st").toInt()
+        return postNum
+    }
     fun sendPostToStringFirestore(post: Post) {
         val data = HashMap<String, Any>()
         with(post) {
