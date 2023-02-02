@@ -15,11 +15,14 @@ class Posts1Lines {
             postText = arrayListOf(
                 " אתה הקורבן למה שאתה. "
             )
-            postTransparency =8
+              postTransparency =8
             postTextSize = arrayListOf(0,18)
             margin=5
+            val colorIndex=13
+            val selector=1
+            val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost11(postNum,imageUri,postText,postTransparency,postTextSize,margin)
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
         return post
     }

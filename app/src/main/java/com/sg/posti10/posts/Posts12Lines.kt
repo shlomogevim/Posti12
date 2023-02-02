@@ -25,19 +25,18 @@ class Posts12Lines {
                 " זה כל כך קיים ",
                 " שאי אפשר לשלול את זה. "
             )
-             postTransparency =5
+            postTransparency =5
             postTextSize = arrayListOf(0,14)
             margin=0
+            val colorIndex=13
+            val selector=1
+            val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost12(postNum,imageUri,postText,postTransparency,postTextSize,margin)
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
         return post
     }
-    /*
-            val backgroundColor = "#00539C"
-            val textColor = "#FFD662"
 
-    }*/
 
 
 

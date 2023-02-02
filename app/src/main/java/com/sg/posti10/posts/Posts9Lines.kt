@@ -12,7 +12,7 @@ class Posts9Lines {
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2012/03/01/01/45/baby-20374_1280.jpg"
             postText = arrayListOf(
-                " לדעתי בזמן הלידה ",
+                "   לדעתי בזמן הלידה ",
                 " יש ברדק גדול בשמי מרום, ",
                 " והרבה תינוקות לא מקבלים ",
                 " את החיים שלהם בצורה מסודרת, ",
@@ -22,14 +22,18 @@ class Posts9Lines {
                 " אבל נראה שהחיים שלהם נשארו ",
                 " אי שם במחסני מרום. "
             )
-            postTransparency =8
+            postTransparency =10
             postTextSize = arrayListOf(0,14)
             margin=0
+            val colorIndex=11
+            val selector=1
+            val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost12(postNum,imageUri,postText,postTransparency,postTextSize,margin)
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
         return post
     }
+
 
 
 

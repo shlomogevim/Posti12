@@ -21,11 +21,14 @@ class Posts8Lines {
                 " ולאדם ככלל מומלץ  ",
                 " עשה יותר שירה ופחות מחשבה. "
             )
-            postTransparency =2
+            postTransparency =5
             postTextSize = arrayListOf(0,14)
             margin=0
+            val colorIndex=13
+            val selector=1
+            val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost13(postNum,imageUri,postText,postTransparency,postTextSize,margin)
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
         return post
     }

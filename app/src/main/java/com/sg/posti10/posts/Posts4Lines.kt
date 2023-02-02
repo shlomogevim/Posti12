@@ -7,6 +7,7 @@ class Posts4Lines {
     val tool=Tools()
      val demi=DemiPost()
     var margin=0
+    var selector=0
 
     private fun extractPostNumFromFunctionName(): Int {
         val func = Thread.currentThread().stackTrace.first { it.methodName.startsWith("loadPost") }
@@ -38,29 +39,6 @@ class Posts4Lines {
         return post
     }
 
-  /*  fun loadPost4999072(): Post {
-        val post = Post()
-        with(post) {
-            postNum= tool.extractPostNumFromFunctionName()
-            imageUri ="https://cdn.pixabay.com/photo/2021/07/27/11/22/mountains-6496638_960_720.jpg"
-            postText = arrayListOf(
-                " הבחירה החופשית שלך מתמקדת  ",
-                "  במה אתה חושב שאתה  ",
-                "  סתם דמות מסיפור אנושי כלשהו  ",
-                " או משהו שמעבר. "
-            )
-            postId = 87
-            textLocation = arrayListOf(10,-1,0,20,0,0, 0, 0)  //  Top  o.k.
-            postPadding = arrayListOf(0, 0, 10,0)
-            postTransparency =0
-            postTextSize = arrayListOf(0, 16)
-            postBackground =  "#F0EDCC"
-            postTextColor = arrayListOf(CONSTANT, "#02343F")
-            postFontFamily = 103
-            videoUrl = "9UVjjcOUJLE"
-        }
-        return post
-    }*/
 
     fun loadPost4999072(): Post {
         var post = Post()
@@ -68,20 +46,20 @@ class Posts4Lines {
             imageUri ="https://cdn.pixabay.com/photo/2021/07/27/11/22/mountains-6496638_960_720.jpg"
             postText = arrayListOf(
                 " הבחירה החופשית שלך מתמקדת  ",
-                "  במה אתה חושב שאתה  ",
+                "  במה אתה חושב שאתה,  ",
                 "  סתם דמות מסיפור אנושי כלשהו  ",
                 " או משהו שמעבר. "
             )
-           postTransparency =0
-           postTextSize = arrayListOf(0,16)
-            margin=10
-
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=13
+            val selector=1
+            val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost20(postNum,imageUri,postText,postTransparency,postTextSize,margin)
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
         return post
     }
-
-
 
 }

@@ -18,13 +18,14 @@ class Posts5Lines {
                 " ולא מספיק רע בשביל ",
                 " להינות מחיים רעים. "
             )
-            postTransparency =7
-            postTextSize = arrayListOf(0,18)
-            margin=5
+            postTransparency =3
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost12(postNum,imageUri,postText,postTransparency,postTextSize,margin)
-            imageUri = "https://cdn.pixabay.com/photo/2022/12/09/22/55/trees-7646226_960_720.jpg"
-
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
         return post
     }

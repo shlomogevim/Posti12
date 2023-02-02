@@ -24,11 +24,15 @@ class Posts11Lines {
                 " ולחפש בהם את המילים המתאימות למראות, ",
                 " אבל הכי כדאי לחיות אותם. "
             )
-             postTransparency =10
+            postTransparency =10
             postTextSize = arrayListOf(0,12)
             margin=0
+            val colorIndex=13
+            val selector=1
+            val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost12(postNum,imageUri,postText,postTransparency,postTextSize,margin)
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+
         }
         return post
     }
