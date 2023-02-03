@@ -31,4 +31,27 @@ class Posts6Lines {
         }
         return post
     }
+    fun loadPost654(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2017/07/03/07/33/seagull-2466929_960_720.jpg"
+            postText = arrayListOf(
+                " אין קשר ממשי ",
+                " בין המילים לחיים עצמם, ",
+                " הקשר היחידי הקיים ",
+                " זו אותה תחושה עמומה של סיפוק  ",
+                " שהמילה הזו שכתבת ",
+                " הצליחה לגעת ברגע הזה שחלף."
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,16)
+            margin=10
+            val colorIndex=20
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
  }

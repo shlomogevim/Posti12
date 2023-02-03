@@ -24,8 +24,6 @@ class MainActivity : AppCompatActivity() {
         drawPostHelper.drawPost( constraintLayout, currentPost)
         tool.sendPostToStringFirestore(currentPost)
 
-        // logi("${currentPost.postNum}   ")
-
     }
 
 

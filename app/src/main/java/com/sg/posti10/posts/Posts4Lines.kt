@@ -62,4 +62,25 @@ class Posts4Lines {
         return post
     }
 
+    fun loadPost4999073(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2017/05/15/01/44/animals-2313502_960_720.jpg"
+            postText = arrayListOf(
+                " בחיים האלה  ",
+                "  אתה יכול להכיר את כל המילים,  ",
+                "  אבל בלי המנגינה הנכונה  ",
+                " זה לא זה. "
+            )
+            postTransparency =6
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=14
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
 }

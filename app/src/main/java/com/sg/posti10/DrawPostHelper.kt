@@ -3,6 +3,7 @@ package com.sg.posti10
 import android.content.Context
 import android.content.res.Resources
 import android.graphics.Color
+import android.graphics.Matrix
 import android.graphics.drawable.GradientDrawable
 import android.view.Gravity
 import android.view.View
@@ -124,7 +125,8 @@ class DrawPostHelper: AppCompatActivity() {
     }
 
     private fun loadImage(layout: ConstraintLayout, post: Post) {
-        val imageView = ImageView(layout.context)
+        val imageMove:Int=getImageMove(post.postNum)
+       val imageView = ImageView(layout.context)
         imageView.id = View.generateViewId()
         val params = ConstraintLayout.LayoutParams(
             ConstraintLayout.LayoutParams.MATCH_PARENT,
@@ -136,11 +138,30 @@ class DrawPostHelper: AppCompatActivity() {
         params.startToStart = ConstraintLayout.LayoutParams.PARENT_ID
         params.endToEnd = ConstraintLayout.LayoutParams.PARENT_ID
         imageView.layoutParams = params
-        imageView.scaleType = ImageView.ScaleType.CENTER_CROP
+
+        if (imageMove==0){
+            imageView.scaleType = ImageView.ScaleType.CENTER_CROP
+        }else{
+            imageView.scaleType = ImageView.ScaleType.MATRIX
+            val matrix = Matrix()
+            matrix.postTranslate(imageMove.toPxf(),0f)
+//       matrix.postScale(0.9f, 1.0f)
+            imageView.imageMatrix = matrix
+        }
         layout.addView(imageView)
         Glide.with(layout.context)
             .load(post.imageUri)
             .into(imageView)
+    }
+
+    fun  getImageMove(postNum: Int): Int {
+        return when (postNum) {
+            29912 -> -450
+            3999018 ->1
+            4999073->-350
+
+            else -> 0
+        }
     }
 
     fun updateColor(str: String): String {
@@ -148,6 +169,7 @@ class DrawPostHelper: AppCompatActivity() {
     }
 
     fun Int.toPx(): Int = (this * Resources.getSystem().displayMetrics.density).toInt()
+    fun Int.toPxf(): Float = (this * Resources.getSystem().displayMetrics.density)
 
 
 

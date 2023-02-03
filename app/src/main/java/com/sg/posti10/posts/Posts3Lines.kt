@@ -17,7 +17,7 @@ class Posts3Lines {
                 " ויותר אתה. "
             )
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost201610(postNum,imageUri,postText)
+//            post=demi.demiPost201610(postNum,imageUri,postText)
         }
         return post
     }
@@ -32,7 +32,7 @@ class Posts3Lines {
                 " זה להוסיף עוד עוולה למאזן. "
             )
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost101610(postNum,imageUri,postText)
+//            post=demi.demiPost101610(postNum,imageUri,postText)
         }
         return post
     }
@@ -48,7 +48,7 @@ class Posts3Lines {
             )
 
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost111610(postNum,imageUri,postText)
+//            post=demi.demiPost111610(postNum,imageUri,postText)
         }
         return post
     }
@@ -69,6 +69,48 @@ class Posts3Lines {
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
             //  post=demi.demiPost12(postNum,imageUri,postText,postTransparency,postTextSize,margin)
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
+    fun loadPost3999018(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2018/07/21/10/07/man-3552247_960_720.jpg"
+            postText = arrayListOf(
+                " הגוף והאגו  ",
+                " מזדקנים עם השנים ",
+                " אתה נשאר כמו שהיית. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,14)
+            margin=0
+            val colorIndex=26
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
+    fun loadPost3999019(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2019/09/25/07/49/soft-spots-4502861_960_720.jpg"
+            postText = arrayListOf(
+                " שתחייה חיים שלווים  ",
+                " בהם תצטרך לקבל ",
+                " בעיקר החלטות קטנות. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=11
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
             post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
         return post
