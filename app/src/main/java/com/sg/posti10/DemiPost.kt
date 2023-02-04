@@ -109,7 +109,7 @@ class DemiPost {
             33-> {colorA = "#A07855"
                 colorB = "#D4B996" }
             34-> {colorA = "#195190"
-                colorB = "#195190" }
+                colorB = "#A2A2A1" }
             35-> {colorA = "##603F83"
                 colorB = "#C7D3D4" }
             36->seperateColors("#2BAE66#FCF6F5")
