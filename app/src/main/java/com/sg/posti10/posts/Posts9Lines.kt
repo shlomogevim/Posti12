@@ -22,10 +22,10 @@ class Posts9Lines {
                 " אבל נראה שהחיים שלהם נשארו ",
                 " אי שם במחסני מרום. "
             )
-            postTransparency =10
+            postTransparency =8
             postTextSize = arrayListOf(0,14)
             margin=0
-            val colorIndex=11
+            val colorIndex=78
             val selector=1
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()

@@ -27,7 +27,7 @@ class Posts11Lines {
             postTransparency =10
             postTextSize = arrayListOf(0,12)
             margin=0
-            val colorIndex=13
+            val colorIndex=30
             val selector=1
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
@@ -36,11 +36,7 @@ class Posts11Lines {
         }
         return post
     }
-    /*
-            val backgroundColor = "#00539C"
-            val textColor = "#FFD662"
 
-    }*/
 
 
 

@@ -5,6 +5,7 @@ import android.content.res.Resources
 class DemiPost {
     var colorA=""
     var colorB=""
+    var colorAB=""
 
     fun demiPost100(postNum: Int, imageUri: String, postText: ArrayList<String>,
                     postTransparency: Int, postTextSize: ArrayList<Int>, margin: Int,colorIndex:Int, selector: Int,fontFamily:Int): Post {
@@ -101,30 +102,74 @@ class DemiPost {
                 colorB = "#d3687f" }
             30-> {colorA = "#B1624E"
                 colorB = "#5CC8D7" }
-            31-> {colorA = "#B1624E"
-                colorB = "#5CC8D7" }
-            32-> {colorA = "#B1624E"
-                colorB = "#5CC8D7" }
-            33-> {colorA = "#B1624E"
-                colorB = "#5CC8D7" }
-            34-> {colorA = "#B1624E"
-                colorB = "#5CC8D7" }
-            35-> {colorA = "#B1624E"
-                colorB = "#5CC8D7" }
-            36-> {colorA = "#B1624E"
-                colorB = "#5CC8D7" }
-            37-> {colorA = "#B1624E"
-                colorB = "#5CC8D7" }
-            38-> {colorA = "#B1624E"
-                colorB = "#5CC8D7" }
-            39-> {colorA = "#B1624E"
-                colorB = "#5CC8D7" }
-            40-> {colorA = "#B1624E"
-                colorB = "#5CC8D7" }
-            41-> {colorA = "#B1624E"
-                colorB = "#5CC8D7" }
+            31-> {colorA = "#7b9acc"
+                colorB = "#FCF6F5" }
+            32-> {colorA = "#101820"
+                colorB = "#F2AA4C" }
+            33-> {colorA = "#A07855"
+                colorB = "#D4B996" }
+            34-> {colorA = "#195190"
+                colorB = "#195190" }
+            35-> {colorA = "##603F83"
+                colorB = "#C7D3D4" }
+            36->seperateColors("#2BAE66#FCF6F5")
+            37-> seperateColors("#FAD0C9#FAD0C9")
+            38-> seperateColors("#2D2926#ed6f63")
+            39->seperateColors( "#DAA03D#616247")
+            40->seperateColors( "#990011#FCF6F5")
+            41-> seperateColors( "#364b44#D64161")
+            42->  seperateColors( "#CBCE91#76528B")
+            43->  seperateColors("#FAEBEF#333D79")
+            44->  seperateColors( "#c72d1b#FDD20E")
+            45-> seperateColors( "#F2EDD7#755139")
+            46-> seperateColors( "#1a7a4c#101820")
+            47-> seperateColors( "#F95700#FFFFFF")
+            48-> seperateColors( "#FFD662#00539C")
+            49-> seperateColors( "#D7C49E#343148")
+            50-> seperateColors( "#DF6589#3C1053")
+            51-> seperateColors( "#FFE77A#2C5F2D")
+            52-> seperateColors( "#e9877e#9E1030")
+            53-> seperateColors( "#FCF951#422057")
+            54-> seperateColors( "#4B878B#921416")
+            55-> seperateColors( "#1C1C1B#CE4A7E")
+            56-> seperateColors( "#00B1D2#FDDB27")
+            57-> seperateColors( "#558600#ff9967")
+            58-> seperateColors( "#BD7F37#A13941")
+            59-> seperateColors( "#eedfe2#9FC131")
+            60-> seperateColors( "#00239C#ed6a66")
+            61-> seperateColors( "#F96167#FCE77D")
+            62-> seperateColors( "#F9D142#292826")
+            63-> seperateColors( "#DF678C#3D155F")
+            64-> seperateColors( "#CCF381#4831D4")
+            65-> seperateColors( "#4A274F#F0A07B")
+            66-> seperateColors( "#FFF548#3C1A5B")
+            67-> seperateColors( "#2E3C7E#FBEAEB")
+            68-> seperateColors( "#EC4D36#1D1B1B")
+            69-> seperateColors( "#141A46#EC8B5E")
+            70-> seperateColors( "#141A46#EC8B5E")
+            71-> seperateColors( "#295F2E#FFE67C")
+            72-> seperateColors( "#F3A950#161B21")
+            73-> seperateColors( "#ef4da0#070952")
+            74-> seperateColors( "#4A171E#E2B143")
+            75-> seperateColors( "#D2302C#F7F7F9")
+            76-> seperateColors( "#E7D044#A04EF6")
+            77-> seperateColors( "#262223#DDC6B6")
+            78-> seperateColors( "#F4EFEA#9A161F")
+            79-> seperateColors( "#234E70#FBF8BE")
+            80-> seperateColors( "#FFE8F5#9000FF")
+            81-> seperateColors( "#191919#BD8F4D")
+            82-> seperateColors( "#CC313D#F7C5CC")
+            83-> seperateColors( "#E2D3F3#013DC4")
+            84-> seperateColors( "##99F443#EC449B")
+            85-> seperateColors( "#EE4E34#FCEDDA")
+            86-> seperateColors( "#96351F#DBB98F")
+            87-> seperateColors( "#E2D0F9#317773")
         }
+    }
 
+    fun seperateColors(color:String){
+        colorA = color.substring(0, 7)
+        colorB = color.substring(8)
     }
 
 

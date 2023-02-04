@@ -23,11 +23,11 @@ class Posts10Lines {
                 " שקובע לי איך החיים שלי יהיו ? ",
                 " זהו, שזה אתה. "
             )
-            postTransparency =10
+            postTransparency =8
             postTextSize = arrayListOf(0,14)
             margin=0
-            val colorIndex=20
-            val selector=1
+            val colorIndex=45
+            val selector=2
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
             post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)

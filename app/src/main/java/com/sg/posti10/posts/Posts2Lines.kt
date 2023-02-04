@@ -19,7 +19,7 @@ class Posts2Lines {
             postTransparency =10
             postTextSize = arrayListOf(0,18)
             margin=0
-            val colorIndex=17
+            val colorIndex=42
             val selector=1
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
@@ -38,7 +38,7 @@ class Posts2Lines {
             postTransparency =10
             postTextSize = arrayListOf(0,16)
             margin=5
-            val colorIndex=28
+            val colorIndex=23
             val selector=1
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()

@@ -22,13 +22,16 @@ class FindPost {
     fun individualPost(): Post {
         var post = Post()
 
-//post=posts1Lines.loadPost103()
+post=posts1Lines.loadPost103()
 //---------
+//        post=posts2Lines.loadPost29911()
 //        post=posts2Lines.loadPost29913()
 //---------
+//              post = posts3Lines.loadPost3999014()
 //        post = posts3Lines.loadPost3999019()
 //---------
-        post = posts4Lines.loadPost4999073()
+//        post = posts4Lines.loadPost4999071()
+//        post = posts4Lines.loadPost4999072()
 //---------
 //        post = posts5Lines.loadPost5999005()
 //---------

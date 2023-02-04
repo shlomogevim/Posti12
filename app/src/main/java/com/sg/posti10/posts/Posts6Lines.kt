@@ -20,11 +20,11 @@ class Posts6Lines {
                 " ולא תמיד זה שווה. ",
                 " (אלא אם הקהל בהצגת חייך הוא המרכז) "
             )
-            postTransparency =10
+            postTransparency =8
             postTextSize = arrayListOf(0,14)
             margin=0
-            val colorIndex=13
-            val selector=2
+            val colorIndex=78
+            val selector=1
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
             post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
