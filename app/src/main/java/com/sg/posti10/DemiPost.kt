@@ -113,7 +113,7 @@ class DemiPost {
             35-> {colorA = "##603F83"
                 colorB = "#C7D3D4" }
             36->seperateColors("#2BAE66#FCF6F5")
-            37-> seperateColors("#FAD0C9#FAD0C9")
+            37-> seperateColors("#FAD0C9#6E6E6D")
             38-> seperateColors("#2D2926#ed6f63")
             39->seperateColors( "#DAA03D#616247")
             40->seperateColors( "#990011#FCF6F5")
@@ -160,7 +160,7 @@ class DemiPost {
             81-> seperateColors( "#191919#BD8F4D")
             82-> seperateColors( "#CC313D#F7C5CC")
             83-> seperateColors( "#E2D3F3#013DC4")
-            84-> seperateColors( "##99F443#EC449B")
+            84-> seperateColors( "#99F443#EC449B")
             85-> seperateColors( "#EE4E34#FCEDDA")
             86-> seperateColors( "#96351F#DBB98F")
             87-> seperateColors( "#E2D0F9#317773")

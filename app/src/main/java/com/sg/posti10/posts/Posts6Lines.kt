@@ -635,41 +635,54 @@ class Posts6Lines {
         util.sendPostToStringFirestore(post)
     }
 
-    fun loadPost650() {  //v
-        val post = Post()
+
+*/
+    fun loadPost649(): Post {
+        var post = Post()
         with(post) {
-            postNum = 650
-            lineNum = 6
+            imageUri = "https://cdn.pixabay.com/photo/2021/01/16/14/31/train-5922321_960_720.jpg"
+            postText = arrayListOf(
+                " כדי להגיע לאור ",
+                " אתה צריך התכוונות אישית ",
+                " להביא את עצמך אליו, ",
+                " כדי להגיע  לחושך ",
+                " אתה לא צריך שום התכוונות ",
+                " הוא ימצא אותך בכוחות עצמו. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=5
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost650(): Post {
+        var post = Post()
+        with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2019/05/02/10/59/water-4173134_960_720.jpg"
             postText = arrayListOf(
                 " משמעות ",
                 " זה אפיק בחיים שבו אתה זורם ",
                 " פעם בשטף ופעם בנחת, ",
-                " בלעדי המשמעות",
+                " בלעדי המשמעות ",
                 " אתה נגר עלי ",
                 " הזורם סתם לכל הכיוונים. "
             )
-            textLocation = arrayListOf(10,-1, 28, 5, 0, 0, 0, 0)
-            postId = 88
             postTransparency =10
-            postTextSize = arrayListOf(0, 14)
-            val backgroundColor = "#000000"
-            val textColor = "#ffffff"
-            postPadding = arrayListOf(10, 0, 10, 0)
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
-            videoUrl="WD8jbNHRujU"
-            videoText = util1.getPostExplanation(postNum, postText)
+            postTextSize = arrayListOf(0,15)
+            margin=5
+            val colorIndex=35
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestore(post)
+        return post
     }
-
-
-*/
     fun loadPost651(): Post {
         var post = Post()
         with(post) {

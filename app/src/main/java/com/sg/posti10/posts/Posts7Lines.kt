@@ -599,72 +599,33 @@ fun loadPost714() {
         util.sendPostToStringFirestore(post)
     }
 
-    fun loadPost718() {
-        val post = Post()
+
+*/
+    fun loadPost718(): Post {
+        var post = Post()
         with(post) {
-            postNum = 718
-            lineNum = 7
             imageUri = "https://cdn.pixabay.com/photo/2017/08/01/10/05/people-2564217_960_720.jpg"
             postText = arrayListOf(
                 " בלכתו בשבילי החיים ",
                 " לאדם יש נטיה מובהקת ",
-                " הוא מביט על האדמה.  ",
+                " להביט על האדמה,  ",
                 "זה טוב",
                 " כי ככה הוא לא נופל לבורות בדרך, ",
                 " זה פחות טוב  ",
                 " כי ככה הוא לא רואה את השמים. "
             )
-            postId=86
-            textLocation = arrayListOf(10, -1, 30,10, 0,0,0, 0)
-            postPadding =  arrayListOf(0, 0,0, 0)
-            postTransparency =5
-            postTextSize = arrayListOf(0, 14)
-            val backgroundColor = "#0A174E"
-            val textColor = "#F5D042"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
-            videoUrl="ZRMmFaKNyc4"
-        }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestore(post)
-    }
-
-    fun loadPost719() {//v
-        val post = Post()
-        with(post) {
-            postNum = 719
-            lineNum = 7
-            imageUri = "https://cdn.pixabay.com/photo/2022/11/17/21/18/landscape-7598904_960_720.jpg"
-            postText = arrayListOf(
-                " בשם הצדק, הדיוק והאמת ",
-                " אתה צריך להביא את הצדדים ",
-                " הפחות נחמדים שלך,  ",
-                "  בשם הבריאות הנפשית של הציבור ",
-                " וניקיון כדור הארץ, ",
-                " תשמור אותם לעצמך,   ",
-                " יש מספיק מהחומרים האלה מסביב. "
-            )
-            postId=86
-            textLocation = arrayListOf(10, -1, 30,10, 0,0,0, 0)
-            postPadding =  arrayListOf(0, 0,0, 0)
             postTransparency =0
-            postTextSize = arrayListOf(0, 14)
-            val backgroundColor = "#0A174E"
-            val textColor = "#F5D042"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
-            videoUrl="yt5LV29Q_X4"
+            postTextSize = arrayListOf(0,14)
+            margin=10
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+
         }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestore(post)
+        return post
     }
-}*/
       fun loadPost719(): Post {
         var post = Post()
         with(post) {
