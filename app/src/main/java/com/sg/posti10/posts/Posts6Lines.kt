@@ -602,41 +602,31 @@ class Posts6Lines {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
-        fun loadPost649() {  //v
-        val post = Post()
-        with(post) {
-            postNum = 649
-            lineNum = 6
-            imageUri = "https://cdn.pixabay.com/photo/2021/01/16/14/31/train-5922321_960_720.jpg"
-            postText = arrayListOf(
-                " כדי להגיע לאור ",
-                " אתה צריך התכוונות אישית ",
-                " להביא את עצמך אליו, ",
-                " כדי להגיע  לחושך ",
-                " אתה לא צריך שום התכוונות ",
-                " הוא ימצא אותך בכוחות עצמו. "
-            )
-            textLocation = arrayListOf(10,-1, 28, 5, 0, 0, 0, 0)
-            postId = 88
-            postTransparency =10
-            postTextSize = arrayListOf(0, 14)
-            val backgroundColor = "#000000"
-            val textColor = "#ffffff"
-            postPadding = arrayListOf(10, 0, 10, 0)
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
-            videoUrl="BREMqjC5w04"
-            videoText = util1.getPostExplanation(postNum, postText)
-        }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestore(post)
-    }
-
 
 */
+    fun loadPost648(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2014/09/16/01/19/girl-447701_960_720.jpg"
+            postText = arrayListOf(
+                " האדם בנוי מהחלק הגלוי לכולם ",
+                " והוא תוצר של כל הבעיות שלו ",
+                " שנפתרו בעבר,  ",
+                " ומהחלק הסמוי מכול ",
+                " והוא תוצר של כל הבעיות שלו ",
+                " שלא נפתרו מעולם. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,14)
+            margin=0
+            val colorIndex=62
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
     fun loadPost649(): Post {
         var post = Post()
         with(post) {
@@ -776,4 +766,32 @@ class Posts6Lines {
         }
         return post
     }
+
+    fun loadPost655(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2015/08/31/22/32/summer-916181_960_720.jpg"
+            postText = arrayListOf(
+                " יש מקומות בך ",
+                " שהם מחוץ למימד הזמן ",
+                " השנים לא נוגעות בהם כלל, ",
+                " הם נראים די מפגרים  ",
+                " בראי המציאות המשתנה ",
+                " אבל הם החלק היותר אמיתי שבך."
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=5
+            val colorIndex=36
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
+
+
+
  }

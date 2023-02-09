@@ -461,5 +461,27 @@ fun loadPost594() {   //v
         return post
     }
 
+fun loadPost5999006(): Post {
+    var post = Post()
+    with(post) {
+        imageUri = "https://cdn.pixabay.com/photo/2017/08/07/16/39/girl-2605526_960_720.jpg"
+        postText = arrayListOf(
+            " הדמות שלך, ",
+            " אומנם מקלה  ",
+            " על אחרים לזהות אותך,  ",
+            " אבל מקשה ",
+            " עליך לזהות את עצמך. "
+        )
+        postTransparency =3
+        postTextSize = arrayListOf(0,16)
+        margin=10
+        val colorIndex=10
+        val selector=1
+        val fontFamily=103
+        postNum= tool.extractPostNumFromFunctionName()
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+    }
+    return post
+}
 
  }
