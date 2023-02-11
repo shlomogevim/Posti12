@@ -4,11 +4,22 @@ import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 
 class Tools {
-   fun extractPostNumFromFunctionName(): Int {
+ /*  fun extractPostNumFromFunctionName(): Int {
         val func = Thread.currentThread().stackTrace.first { it.methodName.startsWith("loadPost") }
         val postNum = func.methodName.substringAfter("loadPost").toInt()
         return postNum
-    }
+    }*/
+ fun extractPostNumFromFunctionName(): Int {
+     val func = Thread.currentThread().stackTrace.first { it.methodName.startsWith("loadPost") }
+     val postNum = func.methodName.substringAfter("loadPost")
+     return if (postNum.length > 3) {
+         postNum.replace("_", "").toInt()
+     } else {
+         postNum.toInt()
+     }
+ }
+
+
     fun extractPostNumFromFunctionName1(): Int {
         val st="demiPost"
         val func = Thread.currentThread().stackTrace.first { it.methodName.startsWith(st) }

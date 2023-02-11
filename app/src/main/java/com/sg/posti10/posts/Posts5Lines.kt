@@ -327,7 +327,7 @@ fun loadPost594() {   //v
         }
         return post
     }
-    fun loadPost5999000(): Post {
+    fun loadPost5_999_000(): Post {
         var post = Post()
         with(post) {
             postText = arrayListOf(
@@ -461,7 +461,7 @@ fun loadPost594() {   //v
         return post
     }
 
-fun loadPost5999006(): Post {
+fun loadPost5_999_006(): Post {
     var post = Post()
     with(post) {
         imageUri = "https://cdn.pixabay.com/photo/2017/08/07/16/39/girl-2605526_960_720.jpg"

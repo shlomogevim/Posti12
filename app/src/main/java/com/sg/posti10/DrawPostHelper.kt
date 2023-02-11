@@ -5,6 +5,7 @@ import android.content.res.Resources
 import android.graphics.Color
 import android.graphics.Matrix
 import android.graphics.drawable.GradientDrawable
+import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.widget.ImageView
@@ -123,10 +124,18 @@ class DrawPostHelper: AppCompatActivity() {
         return textView
 
     }
+    fun getTwoValues(index: Int): Pair<Int, Int> {
+        return when (index) {
+            3999018-> Pair(-30, 0)
+            else -> Pair(0, 0)
+        }
+    }
+
 
     private fun loadImage(layout: ConstraintLayout, post: Post) {
-        val imageMove:Int=getImageMove(post.postNum)
-       val imageView = ImageView(layout.context)
+     // val imageMove:Int=getImageMove(post.postNum)
+        val (dxMovment,dyMovment) = getTwoValues(post.postNum)
+        val imageView = ImageView(layout.context)
         imageView.id = View.generateViewId()
         val params = ConstraintLayout.LayoutParams(
             ConstraintLayout.LayoutParams.MATCH_PARENT,
@@ -138,14 +147,16 @@ class DrawPostHelper: AppCompatActivity() {
         params.startToStart = ConstraintLayout.LayoutParams.PARENT_ID
         params.endToEnd = ConstraintLayout.LayoutParams.PARENT_ID
         imageView.layoutParams = params
-
-        if (imageMove==0){
-            imageView.scaleType = ImageView.ScaleType.CENTER_CROP
+        if (dxMovment==0 && dyMovment==0){
+              imageView.scaleType = ImageView.ScaleType.CENTER_CROP
         }else{
             imageView.scaleType = ImageView.ScaleType.MATRIX
             val matrix = Matrix()
-            matrix.postTranslate(imageMove.toPxf(),0f)
-//       matrix.postScale(0.9f, 1.0f)
+            post.textLocation[4]=dxMovment
+            post.textLocation[5]=dyMovment
+            matrix.postTranslate(dxMovment.toPxf(),dyMovment.toPxf(),)
+//            logi( "DrawPostHelper 160  dxMovment=$dxMovment  post.textLocation=${post.textLocation}")
+
             imageView.imageMatrix = matrix
         }
         layout.addView(imageView)
@@ -154,14 +165,9 @@ class DrawPostHelper: AppCompatActivity() {
             .into(imageView)
     }
 
-    fun  getImageMove(postNum: Int): Int {
-        return when (postNum) {
-            29912 -> -450
-            3999018 ->1
-            4999073->-350
 
-            else -> 0
-        }
+    fun logi(message: String) {
+        Log.i("gg", message)
     }
 
     fun updateColor(str: String): String {

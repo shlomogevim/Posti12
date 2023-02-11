@@ -26,23 +26,28 @@ class FindPost {
 //post=posts1Lines.loadPost103()
 //---------
 //        post=posts2Lines.loadPost296()
-//        post=posts2Lines.loadPost298()
 //        post=posts2Lines.loadPost299()
 //        post=posts2Lines.loadPost29900()
 //        post=posts2Lines.loadPost29915()
+//        post=posts2Lines.loadPost29_916()
 //---------
-              post = posts3Lines.loadPost3974()
-//           post = posts3Lines.loadPost3999()
-//              post = posts3Lines.loadPost3999000()
-//        post = posts3Lines.loadPost3999022()
+//              post = posts3Lines.loadPost3_970()
+//              post = posts3Lines.loadPost3_999()
+
+//              post = posts3Lines.loadPost3_999_000()
+       //        post = posts3Lines.loadPost3_999_022()
 //---------
+        post = posts4Lines.loadPost4998()
+//        post = posts4Lines.loadPost4999()
+//        post = posts4Lines.loadPost4_999_000()
 //        post = posts4Lines.loadPost4999050()
-//        post = posts4Lines.loadPost4999076()
+//           post = posts4Lines.loadPost4999076()
+//        post = posts4Lines.loadPost4_999_077()
 //---------
 //        post = posts5Lines.loadPost596()
 //        post = posts5Lines.loadPost599()
-//        post = posts5Lines.loadPost5999000()
-//        post = posts5Lines.loadPost5999006()
+//        post = posts5Lines.loadPost5_999_000()
+//        post = posts5Lines.loadPost5_999_006()
 //---------
 //        post = posts6Lines.loadPost648()
 //        post = posts6Lines.loadPost655()

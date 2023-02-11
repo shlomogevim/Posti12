@@ -588,4 +588,23 @@ fun loadPost29915(): Post {
     return post
 }
 
+    fun loadPost29_916(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2020/10/14/22/32/buildings-5655593_960_720.jpg"
+            postText = arrayListOf(
+                " הבעיה העיקרית של בני האדם ",
+                " היא היותם בני אדם. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=27
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
 }
