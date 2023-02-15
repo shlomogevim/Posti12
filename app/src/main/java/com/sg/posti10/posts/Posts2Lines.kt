@@ -278,7 +278,7 @@ fun loadPost291() { //I
         }
         return post
     }
-    fun loadPost29900(): Post {
+    fun loadPost29900(): Post {    // f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2015/09/05/07/28/writing-923882_960_720.jpg"
@@ -357,7 +357,7 @@ fun loadPost291() { //I
         return post
     }
 
-    fun loadPost29904(): Post {
+    fun loadPost29904(): Post {     //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2016/12/30/22/47/baby-1941747_960_720.jpg"
@@ -415,7 +415,7 @@ fun loadPost291() { //I
         }
         return post
     }
-    fun loadPost29907(): Post {
+    fun loadPost29907(): Post {     //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2022/06/13/15/33/leaf-7260246_960_720.jpg"
@@ -434,7 +434,7 @@ fun loadPost291() { //I
         }
         return post
     }
-    fun loadPost29908(): Post {
+    fun loadPost29908(): Post {   //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2015/06/28/12/20/happiness-824419_960_720.jpg"
@@ -491,7 +491,7 @@ fun loadPost291() { //I
         }
         return post
     }
-      fun loadPost29911(): Post {
+      fun loadPost29911(): Post {  //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2020/02/17/20/23/create-4857731_960_720.jpg"
@@ -529,7 +529,7 @@ fun loadPost291() { //I
         }
         return post
     }
-fun loadPost29913(): Post {
+fun loadPost29913(): Post {  //f
     var post = Post()
     with(post) {
         imageUri = "https://cdn.pixabay.com/photo/2019/01/28/07/15/man-3959784_960_720.jpg"
@@ -577,33 +577,32 @@ fun loadPost29915(): Post {
             " קובע מה אתה באמת. "
         )
         postTransparency =0
-        postTextSize = arrayListOf(0,28)
+        postTextSize = arrayListOf(0,16)
         margin=0
         val colorIndex=35
         val selector=2
-        val fontFamily=110
+        val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
         post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
-
     fun loadPost29_916(): Post {
         var post = Post()
         with(post) {
-            imageUri = "https://cdn.pixabay.com/photo/2020/10/14/22/32/buildings-5655593_960_720.jpg"
+            imageUri = "https://cdn.pixabay.com/photo/2018/01/06/09/25/hijab-3064633_960_720.jpg"
             postText = arrayListOf(
-                " הבעיה העיקרית של בני האדם ",
-                " היא היותם בני אדם. "
+                " כל אחד רוצה להיות מישהו אחר ",
+                " כאילו שאת עצמו הוא כבר ניסה באמת. "
             )
-            postTransparency =10
+            postTransparency =0
             postTextSize = arrayListOf(0,16)
-            margin=5
-            val colorIndex=27
-            val selector=2
+            margin=0
+            val colorIndex=28
+            val selector=1
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
         return post
     }

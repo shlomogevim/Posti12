@@ -113,7 +113,18 @@ class DrawPostHelper: AppCompatActivity() {
         textView.setPadding(pad[0].toPx(),pad[1].toPx(), pad[2].toPx(), pad[3].toPx())
         val typeface = helper.getFamilyFont(post.postFontFamily)
         textView.typeface = ResourcesCompat.getFont(layout.context, typeface)
+
         textView.setLineSpacing(0f, post.lineSpacing)
+/*
+  if (post.lineSpacing==0.9f){
+      val lineHeight = textView.lineHeight // get the total line height in pixels
+      val reducedHeight = (lineHeight * 1.5).toInt() // set the height to 83% of the total line height
+      textView.height = reducedHeight // set the reduced height
+      textView.setLineSpacing(0f, post.lineSpacing)
+  }else{
+      textView.setLineSpacing(0f, post.lineSpacing)
+  }*/
+
         val layoutParams = LinearLayout.LayoutParams(
             LinearLayout.LayoutParams.WRAP_CONTENT,
             LinearLayout.LayoutParams.WRAP_CONTENT
@@ -127,7 +138,17 @@ class DrawPostHelper: AppCompatActivity() {
     fun getTwoValues(index: Int): Pair<Int, Int> {
         return when (index) {
             3999018-> Pair(-30, 0)
+            4967-> Pair(-200, 0)
+            4969-> Pair(-430, 0)
+            4956-> Pair(1, 0)
+            4923-> Pair(-500, 0)
             else -> Pair(0, 0)
+        }
+    }
+    fun getThreeValues(index: Int, scale: Float): Triple<Int, Int, Float> {
+        return when (index) {
+            3999018 -> Triple((-30 * scale).toInt(), 0, scale)
+            else -> Triple(0, 0, scale)
         }
     }
 
@@ -154,8 +175,9 @@ class DrawPostHelper: AppCompatActivity() {
             val matrix = Matrix()
             post.textLocation[4]=dxMovment
             post.textLocation[5]=dyMovment
-            matrix.postTranslate(dxMovment.toPxf(),dyMovment.toPxf(),)
-//            logi( "DrawPostHelper 160  dxMovment=$dxMovment  post.textLocation=${post.textLocation}")
+            matrix.postTranslate(dxMovment.toPxf(),dyMovment.toPxf())
+
+         logi( "DrawPostHelper 160  dxMovment=$dxMovment dyMovment=$dyMovment post.textLocation=${post.textLocation}")
 
             imageView.imageMatrix = matrix
         }

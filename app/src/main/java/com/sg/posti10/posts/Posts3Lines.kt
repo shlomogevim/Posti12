@@ -583,16 +583,16 @@ fun loadPost3996(): Post {
 fun loadPost3998(): Post {
     var post = Post()
     with(post) {
-        imageUri = "https://cdn.pixabay.com/photo/2018/11/26/20/24/railway-3840175_960_720.jpg"
+        imageUri = "https://cdn.pixabay.com/photo/2015/07/15/06/44/homeless-845711_960_720.jpg"
         postText = arrayListOf(
-            "  החיים שלך עוברים בכל מקרה  ",
-            " גם אם תחייה אותם ",
-            " וגם אם לא. ",
+            "  אני יכול  להבין  ",
+            " את אלה שיש להם בעיות איתי , ",
+            " גם לי יש בעיות עם עצמי. ",
         )
         postTransparency =10
         postTextSize = arrayListOf(0,16)
         margin=0
-        val colorIndex=48
+        val colorIndex=51
         val selector=2
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
@@ -600,7 +600,7 @@ fun loadPost3998(): Post {
     }
     return post
 }
-fun loadPost3_999(): Post {
+fun loadPost3999(): Post {
     var post = Post()
     with(post) {
         imageUri = "https://cdn.pixabay.com/photo/2018/11/26/20/24/railway-3840175_960_720.jpg"
@@ -780,7 +780,7 @@ fun loadPost3999007(): Post {
     }
     return post
 }
-fun loadPost3999008(): Post {
+fun loadPost3999008(): Post {   //f
     var post = Post()
     with(post) {
         postText = arrayListOf(
@@ -821,7 +821,7 @@ fun loadPost3999009(): Post {
     return post
 }
 
-fun loadPost3999010(): Post {
+fun loadPost3999010(): Post {    //f
     var post = Post()
     with(post) {
         postText = arrayListOf(
@@ -1085,6 +1085,27 @@ fun loadPost3999011(): Post {
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
             post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
+    fun loadPost3_999_023(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2018/03/15/17/15/celebration-3228848_960_720.jpg"
+            postText = arrayListOf(
+                "  עדיף להיות  ",
+                " שוטה על הגבעה ",
+                "  מחכם בבור. ",
+            )
+            postTransparency =5
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=23
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
         return post
     }

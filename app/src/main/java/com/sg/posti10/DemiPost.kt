@@ -1,14 +1,18 @@
 package com.sg.posti10
 
 import android.content.res.Resources
+import android.util.Log
 
 class DemiPost {
     var colorA=""
     var colorB=""
     var colorAB=""
-
+    fun logi(message: String) {
+        Log.i("gg", message)
+    }
     fun demiPost100(postNum: Int, imageUri: String, postText: ArrayList<String>,
-                    postTransparency: Int, postTextSize: ArrayList<Int>, margin: Int,colorIndex:Int, selector: Int,fontFamily:Int): Post {
+                    postTransparency: Int, postTextSize: ArrayList<Int>, margin: Int,colorIndex:Int,
+                    selector: Int,fontFamily:Int,lineSpacing1:Float=1f): Post {
         val post = Post()
         with(post) {
             getColors(colorIndex)
@@ -27,13 +31,17 @@ class DemiPost {
                 this.postBackground = colorB
                 this.postTextColor = arrayListOf(CONSTANT, colorA)
             }
+
+           // this.lineSpacing=lineSpacing1
+        //    logi("lineSpacing=$lineSpacing")
             this.postFontFamily = fontFamily
             this.videoUrl = "9UVjjcOUJLE"
         }
         return post
     }
     fun demiPost200(postNum: Int, imageUri: String, postText: ArrayList<String>,
-                    postTransparency: Int, postTextSize: ArrayList<Int>, margin: Int,colorIndex:Int, selector: Int,fontFamily:Int): Post {
+                    postTransparency: Int, postTextSize: ArrayList<Int>, margin: Int,colorIndex:Int, selector: Int,
+                    fontFamily:Int,lineSpacing1:Float=1f): Post {
         val post = Post()
         with(post) {
             getColors(colorIndex)
@@ -52,6 +60,7 @@ class DemiPost {
                 this.postBackground = colorB
                 this.postTextColor = arrayListOf(CONSTANT, colorA)
             }
+//            this.lineSpacing=lineSpacing1
             this.postFontFamily = fontFamily
             this.videoUrl = "9UVjjcOUJLE"
         }
@@ -145,7 +154,7 @@ class DemiPost {
             66-> seperateColors( "#FFF548#3C1A5B")
             67-> seperateColors( "#2E3C7E#FBEAEB")
             68-> seperateColors( "#EC4D36#1D1B1B")
-            69-> seperateColors( "#141A46#EC8B5E")
+            69-> seperateColors( "#8BD8BD#243665")
             70-> seperateColors( "#141A46#EC8B5E")
             71-> seperateColors( "#295F2E#FFE67C")
             72-> seperateColors( "#F3A950#161B21")
