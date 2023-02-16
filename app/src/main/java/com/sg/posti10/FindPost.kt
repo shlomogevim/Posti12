@@ -30,14 +30,16 @@ class FindPost {
 //        post=posts2Lines.loadPost29900()
 //        post=posts2Lines.loadPost29_916()
 //---------
+              post = posts3Lines.loadPost388()
+//              post = posts3Lines.loadPost390()
+//              post = posts3Lines.loadPost3969()
 //              post = posts3Lines.loadPost3_970()
-
 //              post = posts3Lines.loadPost3998()
 //              post = posts3Lines.loadPost3999()
 //              post = posts3Lines.loadPost3_999_000()
 //               post = posts3Lines.loadPost3_999_023()
 //---------
-        post = posts4Lines.loadPost488()
+//        post = posts4Lines.loadPost488()
 //        post = posts4Lines.loadPost490()
 //        post = posts4Lines.loadPost4_900()
 //        post = posts4Lines.loadPost4_999()
