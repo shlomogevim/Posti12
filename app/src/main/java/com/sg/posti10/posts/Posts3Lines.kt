@@ -5,6 +5,7 @@ import com.sg.posti10.*
 class Posts3Lines {
       val tool=Tools()
       val demi=DemiPost()
+       var margin=0
     fun loadPost300(): Post {
         var post = Post()
         with(post) {
@@ -1766,7 +1767,7 @@ class Posts3Lines {
             post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
         return post
-    }   var margin=0
+    }
 
     fun loadPost388(): Post {
         var post = Post()
