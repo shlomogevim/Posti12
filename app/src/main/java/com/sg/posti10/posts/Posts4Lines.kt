@@ -7,6 +7,1270 @@ class Posts4Lines {
     val tool=Tools()
      val demi=DemiPost()
     var margin=0
+    fun loadPost400(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2020/01/21/11/39/running-4782722_1280.jpg"
+            postText = arrayListOf(
+                "  על תהיה הכי טוב  ",
+                "  זה לא יצליח לך לאורך זמן,  ",
+                " לך על משהו יותר ממשי  ",
+                "  תהיה הכי אתה. "
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0,16)
+            margin=20
+            val colorIndex=35
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost401(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2017/01/09/22/24/guy-playing-billiard-1967834_1280.jpg"
+            postText = arrayListOf(
+                " הבלים הם דברים אמיתיים, ",
+                " מה שהופך אותם להבלים לגביך ",
+                " זו היכולת שלהם ",
+                " למנוע ממך להתפתח. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost402(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2020/01/25/09/28/woman-4792042_1280.jpg"
+            postText = arrayListOf(
+                " פסימיות ",
+                " זה לחשוב שיש מישהו מאושר ממך, ",
+                " אופטימיות ",
+                " זה להבין שאין אחד כזה. "
+            )
+            postTransparency =7
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=44
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost403(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/06/01/09/15/art-1428646_1280.jpg"
+            postText = arrayListOf(
+                " האויב של הטוב ",
+                " הוא הטוב יותר, ",
+                " האויב של הרגע ",
+                " הוא הרגע הבא. "
+            )
+            postTransparency =4
+            postTextSize = arrayListOf(0,16)
+            margin=60
+            val colorIndex=44
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost404(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/09/03/19/06/teddy-2711675_960_720.jpg"
+            postText = arrayListOf(
+                " האנשים ",
+                " חיים כדרכם ",
+                " מתוך תא הכלא ",
+                "  של מה שהם חושבים שהם.  "
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost405(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2020/12/16/21/58/tv-5837826_1280.jpg"
+            postText = arrayListOf(
+                "  וגם באם תגיע לאור,  ",
+                " אחרי חצי שעה תקום לראות טלוויזיה, ",
+                "  כי מתחיל האח הגדול  ",
+                "  ויש הדחה כפולה.  "
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0,14)
+            margin=0
+            val colorIndex=43
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost406(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/06/29/20/48/cemetery-2456173_1280.jpg"
+            postText = arrayListOf(
+                " ישנם אנשים קרובים ",
+                "  שבהלוויה שלהם,  ",
+                " אתה פחות סופד להם ",
+                "  ויותר לעצמך.  "
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=36
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost407(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2020/11/24/17/36/magic-5773359_1280.png"
+            val s1 = "\""
+            val s2 = "\""
+            val s12 = " פוליטיקלי קורקט "
+            postText = arrayListOf(
+                "$s1$s12$s2",
+                "  זה היכולת של האדם  ",
+                "  לקרוא ליום לילה וללילה יום  ",
+                "  בשם האמונות שלו.  "
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=27
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost408(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/10/10/07/48/beach-2836300_1280.jpg"
+            postText = arrayListOf(
+                "  שיחות עם הים  ",
+                "כמו רוב השיחות עם בני האדם,",
+                "  לא יצאת חכם יותר  ",
+                "אבל לפחות אמרת את מה שאתה חושב."
+            )
+            postTransparency =7
+            postTextSize = arrayListOf(0,14)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost409(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2021/11/20/05/15/car-6810885_1280.jpg"
+            postText = arrayListOf(
+                "  השאלה היא פחות:  ",
+                " מה קורה כאן, ",
+                "  ויותר, איפה אני בכל  ",
+                " מה שקורה כאן. "
+            )
+            postTransparency =7
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost410(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/12/11/12/42/river-1899328_1280.jpg"
+            postText = arrayListOf(
+                "  את האיזורים הרדודים בעולם  ",
+                "  אתה לא יכול להאשים ברדידות, ",
+                "  אתה יכול להאשים רק את עצמך  ",
+                " שאתה נמצא יותר מידי זמן באיזורים האלה. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=20
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost411(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/02/06/10/54/sad-2042536_1280.jpg"
+            postText = arrayListOf(
+                " החיים שלך זה כמו השיער ",
+                " יש ימים שהם מסתדרים לך, ",
+                "ואז אתה מרגיש טוב עם עצמך",
+                " ויש ימים שלא. "
+            )
+            postTransparency =7
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=32
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost412(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2012/02/24/16/56/beach-16698_1280.jpg"
+            postText = arrayListOf(
+                " תן לי את הכישרון ",
+                "   לראות הבלים כהבלים, ",
+                "  עם האמת הפשוטה  ",
+                " אני כבר אסתדר. "
+            )
+            postTransparency =7
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=35
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost413(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/10/18/05/19/old-man-1749360_1280.jpg"
+            postText = arrayListOf(
+                "  לא השתנת, ",
+                "תמיד היית בנוי מאותם חומרים,",
+                " רק שעם הגיל ",
+                "אתה משתמש בהם קצת אחרת."
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost414(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2018/10/06/08/27/religion-3727463__480.jpg"
+            postText = arrayListOf(
+                "  גבולות העולם שלך די קבועים,  ",
+                "  ככה  ",
+                "  שכמה שהאלוהות שבך יותר גדולה,  ",
+                "  הבעיות האישיות שלך יותר קטנות.  "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=5
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost415(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2018/10/12/13/36/soder-3742220_1280.jpg"
+            postText = arrayListOf(
+                " להתעצבן בגלל פוליטיקה  ",
+                " זה מותרות  ",
+                "  שרק למי שיש חיי נצח  ",
+                "  יכול להרשות לעצמו.  "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=23
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost416(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/04/26/23/46/morning-2264051_1280.jpg"
+            postText = arrayListOf(
+                "לא היית יכול",
+                "לחיות את חייך אחרת,",
+                "פשוט",
+                "כי אתה כזה."
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,15)
+            margin=5
+            val colorIndex=19
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost417(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2018/01/03/05/37/the-sun-3057625_1280.jpg"
+            postText = arrayListOf(
+                "בחיים האלה",
+                "אתה יכול לחיות בכאילו,",
+                "אבל בכל מקרה",
+                "בסוף תמות באמת."
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,15)
+            margin=5
+            val colorIndex=62
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost418(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/11/29/09/32/concept-1868728_1280.jpg"
+            postText = arrayListOf(
+                "  החיים גדולים עליך בכמה מספרים,  ",
+                "  ובגלל זה   ",
+                "  אתה מסתפק בסיפורים על החיים  ",
+                "   שיש אצלך בראש.   "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=62
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost419(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/08/01/06/51/people-1560569_1280.jpg"
+            postText = arrayListOf(
+                "  החיים האלה זה סוג של משחק,  ",
+                "  נכון מתים בסוף המשחק הזה   ",
+                "  אבל כדי להנות ממנו   ",
+                "  אתה צריך להיות קצת ילד.  "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=26
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost420(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2010/12/13/09/50/jute-1655_1280.jpg"
+            postText = arrayListOf(
+                "  ישנם בעיות אמיתיות  ",
+                "  וישנם בעיות דמי,   ",
+                "  העוול הגדול שהאדם עושה לעצמו  ",
+                "  הוא לשים את כל הבעיות באותו שק.  "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=50
+            val colorIndex=26
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost421(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2015/07/25/11/49/sea-859517_1280.jpg"
+            postText = arrayListOf(
+                "חבל להתעצבן היום על דברים,",
+                "שאתה בלי בעיות ",
+                "יכול להתעצבן עליהם",
+                " גם מחר. "
+            )
+            postTransparency =3
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost422(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/06/26/02/47/man-2442565_1280.jpg"
+            postText = arrayListOf(
+                "האושר",
+                "הוא תוצר לוואי",
+                "  למעשים הנכונים לך  ",
+                "שאתה עושה."
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=19
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost423(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/08/07/08/46/city-2601562_1280.jpg"
+            postText = arrayListOf(
+                "  חוסר שפיות  ",
+                "  זה לחיות את הטירוף שלך,  ",
+                "  שפיות  ",
+                "  זה לחיות את הטירוף של הכלל.  "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=19
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost424(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/06/05/11/01/airport-2373727_1280.jpg"
+            postText = arrayListOf(
+                "  אנשים נוסעים לפה  ",
+                "  אנשים נוסעים לשם,  ",
+                "    אבל בסוף    ",
+                "  תמיד הם פוגשים בעיקר את עצמם.  "
+            )
+            postTransparency =3
+            postTextSize = arrayListOf(0,15)
+            margin=5
+            val colorIndex=18
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost425(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/01/26/05/33/character-1161955_1280.jpg"
+            postText = arrayListOf(
+                "  אומנם  ",
+                "  אתה רואה את החיים כמו שהם  ",
+                "  אבל  ",
+                "  תופס אותם כמו שאתה.  "
+            )
+            postTransparency =5
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=11
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost426(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2020/04/20/15/55/flame-5068748_1280.jpg"
+            postText = arrayListOf(
+                "להביא חושך בחשכה",
+                "כל אחד יכול,",
+                "להביא אור בחשכה",
+                "זה קצת יותר ייחודי."
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost427(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2015/07/09/22/45/tree-838667_1280.jpg"
+            postText = arrayListOf(
+                "נחמה",
+                "זה שמישהו אומר לך שאתה בסדר,",
+                "שלווה",
+                "זה שאתה מבין שאתה בסדר."
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost428(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/05/15/20/53/man-1394395_960_720.jpg"
+            postText = arrayListOf(
+                "  כשאתה סימן שאלה  ",
+                "  תשובה אמיתית יכולה לעזור לך להתיישר,  ",
+                "  אבל לרוב אתה סימן קריאה  ",
+                "  והתשובה האמיתית מחליקה עליך ונעלמת.  "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,14)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost429(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/09/16/17/41/boy-2756201_1280.jpg"
+            postText = arrayListOf(
+                "  החיים הם כמו משחק שח,",
+                " אתה יכול לדעת את כל הכללים,  ",
+                " אבל זה ממש לא עוזר לך ",
+                "  לדעת לשחק את המשחק הזה.  "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=37
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost430(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2019/10/31/11/42/cup-4591710_1280.jpg"
+            postText = arrayListOf(
+                "  גם  ",
+                " שמדברים כל הזמן על החצי כוס הריקה, ",
+                "  זה  ",
+                "  לא עושה אותה יותר מחצי כוס.  "
+            )
+            postTransparency =5
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost431(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/02/04/23/02/candle-2038736_1280.jpg"
+            postText = arrayListOf(
+                "בכאן ועכשיו",
+                "או שאתה אור,",
+                "או שאתה חושך,",
+                "ככה פשוט."
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,16)
+            margin=10
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost432(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/03/27/17/42/man-1283235_1280.jpg"
+            postText = arrayListOf(
+                " זה שאני חי כל כך הרבה שנים ",
+                " זה לא אומר שיש לי כישורים מיוחדים לעשות את זה, ",
+                " זה אומר רק שלא נהרגתי אפילו פעם אחת ",
+                " ושאני יודע לקום בבוקר. "
+            )
+            postTransparency =5
+            postTextSize = arrayListOf(0,14)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost433(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/11/14/04/12/school-1822566_1280.jpg"
+            postText = arrayListOf(
+                " תהיה ",
+                " יותר עצמך ",
+                " כי אין לך משהו אחר ",
+                " להיות. "
+            )
+            postTransparency =4
+            postTextSize = arrayListOf(0,16)
+            margin=20
+            val colorIndex=36
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost434(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/09/06/19/43/african-2722733_1280.jpg"
+            postText = arrayListOf(
+                " האדם הוא יצור מוזר, ",
+                "גם אם היו נותנים לו להיות  בגן העדן",
+                "  הוא היה  פותח חדשות  ",
+                " כדי לשמוע מה קורה בגיהנום. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=49
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost435(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2015/06/22/08/37/children-817365_1280.jpg"
+            postText = arrayListOf(
+                "  להצליח בחיים ",
+                " זה לא למות ",
+                "  ולא מבחוץ  ",
+                "  ולא מבפנים. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=49
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost436(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2018/10/27/00/50/male-3775700_1280.jpg"
+            postText = arrayListOf(
+                " בשבח השתיקה ",
+                " בשבח חוסר התגובה, ",
+                " שיעבור עלי ",
+                " שיעבור. "
+            )
+            postTransparency =4
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=49
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost437(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2021/03/19/07/56/tavern-6106835_1280.jpg"
+            postText = arrayListOf(
+                " הבלים הם חלק מהחיים ",
+                " ואין בהם כל בעיה, ",
+                " כל זמן ",
+                " שאתה תופס אותם כהבלים."
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=29
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost438(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2019/09/17/12/54/landscape-4483412_1280.jpg"
+            postText = arrayListOf(
+                " שאתה קטן ",
+                " כל גרגר מוחץ אותך, ",
+                " שאתה גדול  ",
+                "  זה סתם אבק ברוח. "
+            )
+            postTransparency =5
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost439(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2014/12/03/15/42/boy-555577_1280.jpg"
+            postText = arrayListOf(
+                " ביקורת רעה על העולם ",
+                " זה הרבה יותר מביקורת, ",
+                " זה הופך את החיים שלך ",
+                " להצגה כושלת."
+            )
+            postTransparency =2
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=31
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost440(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/08/30/19/54/beach-1631874_960_720.jpg"
+            postText = arrayListOf(
+                " בדרך כלל ",
+                " דברים שאין לך  ",
+                " אלו דברים ",
+                " שאתה מאמין שאין לך. "
+            )
+            postTransparency =2
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=31
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost441(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2021/11/13/23/06/tree-6792528_1280.jpg"
+            postText = arrayListOf(
+                " התסכול שבך ",
+                " נגמר בקצה המודעות שלך,  ",
+                " העולם ממשיך להיות ",
+                " הרבה מעבר לזה. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=30
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost442(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2015/12/04/09/34/crawl-1076324_1280.jpg"
+            postText = arrayListOf(
+                " האמנות הזו ",
+                "  להשתתף רק בוויכוחים  ",
+                " שנכונים לך, ",
+                "  שמורה למתי מעט.  "
+            )
+            postTransparency =6
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=35
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost443(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2014/11/02/09/15/man-513529_1280.jpg"
+            postText = arrayListOf(
+                " כל אדם ",
+                "  מייצר את הסבל האנושי שלו,  ",
+                " העולם סביב ",
+                "  רק בורא את החומרים לזה.  "
+            )
+            postTransparency =7
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=16
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost444(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2015/01/01/23/55/telephone-586266_1280.jpg"
+            postText = arrayListOf(
+                " האדם הוא יצור די טמבל, ",
+                "  המזל שלו  ",
+                " שלא צריך להיות חכם גדול ",
+                "  כדי לחיות בעולם הזה.  "
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=19
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost445(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2019/04/06/16/18/passover-4107705_1280.jpg"
+            postText = arrayListOf(
+                " רוב האנשים יודעים לאמץ מסגרות ",
+                " חלקם יודעים אפילו ליצור אותם ",
+                " אבל רק מעטים  ",
+                " יודעים לתת בהם תוכן. "
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=11
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost446(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2019/11/27/07/01/trouble-4656179_1280.jpg"
+            postText = arrayListOf(
+                " כל החכמה בחיים האלה ",
+                " זה להשתדל ",
+                " שלא ליצור בעיות  ",
+                " איפה שהן לא קיימות. "
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=11
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost447(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/09/08/20/29/chess-2730034_1280.jpg"
+            postText = arrayListOf(
+                " אותה אמת ",
+                "שאתה די בטוח בה שהיא אמת",
+                " בדרך כלל  ",
+                " מונעת ממך לדעת את האמת. "
+            )
+            postTransparency =5
+            postTextSize = arrayListOf(0,16)
+            margin=10
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost448(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/01/18/20/11/old-man-1147288_1280.jpg"
+            postText = arrayListOf(
+                " המוות לא קיים ",
+                "החיים נמשכים לעד,",
+                " רק שאתה מרגע מסוים  ",
+                " לא תשתתף בהם יותר. "
+            )
+            postTransparency =5
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost449(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2023/02/13/20/49/old-man-7788342_960_720.jpg"
+            postText = arrayListOf(
+                "  אין חדש תחת השמש ",
+                " וטוב שכך ",
+                " בגלל שגם עם הישן  ",
+                " קשה לי להסתדר. "
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=27
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+   fun loadPost450(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/11/01/16/48/cube-2908605_1280.jpg"
+            postText = arrayListOf(
+                "  אל תתייאש, ",
+                " לפעמים הפתרון ",
+                " עובר דרך איזורים   ",
+                " שניראים לך כחסרי פתרון. "
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=26
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost451(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/04/27/20/38/girl-1357485_1280.jpg"
+            postText = arrayListOf(
+                "  אתה יכול לעשות הרבה דברים ",
+                " עם החיים שלך, ",
+                " והכי טוב  ",
+                " זה לחיות אותם.  "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=14
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost452(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/07/28/15/17/pokemon-1548194_1280.jpg"
+            postText = arrayListOf(
+                "  בעידן המודרני ",
+                " קומץ קטן של ממציאים גאונים ",
+                "  מאפשרים לשאר האנושות  ",
+                "  לשקוע בטמטום גמור.  "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost453(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/07/09/12/16/apples-1506119_1280.jpg"
+            postText = arrayListOf(
+                "  אם לא הייתי ",
+                " מפריע כל כך לעצמי ",
+                " וודאי שהייתי  ",
+                "יכול להנות הרבה יותר מהחיים האלה."
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
+    fun loadPost454(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2013/11/28/10/03/river-219972_1280.jpg"
+            postText = arrayListOf(
+                "  חוסר המנוחה הבסיסי שיש לאדם ",
+                " נובע מהחיים עצמם ",
+                " שאינם אגם קפוא  ",
+                " אלא נהר זורם. "
+            )
+            postTransparency =6
+            postTextSize = arrayListOf(0,15)
+            margin=30
+            val colorIndex=37
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost455(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/08/01/20/15/girl-1562025_1280.jpg"
+            postText = arrayListOf(
+                "  למודעות שלך יש קיבולת מוגבלת, ",
+                " על כל קורטוב הבלים שאתה מאמץ ",
+                " קורטוב קדושה חומק ממך  ",
+                "  בעיקר בגלל חוסר מקום. "
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,15)
+            margin=10
+            val colorIndex=19
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost456(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/07/03/09/17/fog-1494431_1280.jpg"
+            postText = arrayListOf(
+                " האמת ",
+                " לא הולכת אף פעם לאיבוד, ",
+                " היא רק מתגלית לך  ",
+                "  כל פעם מחדש. "
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,15)
+            margin=10
+            val colorIndex=19
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost457(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2016/06/09/23/45/soldier-1447008_1280.jpg"
+            postText = arrayListOf(
+                " על דבר אחד בטוח שלא תסלח לעצמך, ",
+                " על שבזבת את עצמך ",
+                " במלחמות סרק  ",
+                "  שהיו קיימות רק בראש שלך. "
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,15)
+            margin=10
+            val colorIndex=27
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost458(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2018/10/19/12/14/train-3758523_1280.jpg"
+            postText = arrayListOf(
+                " החיים לא מתכוונים לפגוע בך אישית ",
+                " הם מתנהלים בדרכם, ",
+                " רק שאתה לפעמים עומד להם  ",
+                "  באמצע אותה דרך. "
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0,15)
+            margin=10
+            val colorIndex=31
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost459(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2018/01/06/10/12/adult-3064693_1280.jpg"
+            postText = arrayListOf(
+                " גובה  ההר נמדד ",
+                " מהמפלס שבו הוא מתחיל להתרומם, ",
+                " השמחה שלך נמדדת  ",
+                " ממפלס הצער בו היית. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=27
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
     fun loadPost460(): Post {
         var post = Post()
         with(post) {
@@ -4628,7 +5892,27 @@ fun loadPost4999076(): Post {
         }
         return post
     }
-
+    fun loadPost4_999_078(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2016/11/05/11/06/chain-1799916_960_720.jpg"
+            postText = arrayListOf(
+                " העבדים החדשים  ",
+                " אלה אותם בני חורין ",
+                "  שבחרו במודע להיות עבדים  ",
+                " מתוך מה שהם. "
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=32
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
 
 
 }

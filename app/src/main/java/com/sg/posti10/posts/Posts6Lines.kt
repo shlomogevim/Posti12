@@ -791,6 +791,30 @@ class Posts6Lines {
         return post
     }
 
+    fun loadPost656(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2017/02/02/15/15/bottle-2032980_960_720.jpg"
+            postText = arrayListOf(
+                " בעולם שלך ",
+                " אתה נותן לדברים חיים, ",
+                " מהמפלצות הגדולות  ",
+                "   עד למקור היצירה שבך,    ",
+                " אל תעשה זאת מתוך הרגל ",
+                "   כי אתה חי בעולם הזה.  "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
 
 
 
