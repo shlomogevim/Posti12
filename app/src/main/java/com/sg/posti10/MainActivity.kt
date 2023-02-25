@@ -5,8 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.WindowManager
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.sg.posti10.posts.Posts3Lines
-import com.sg.posti10.posts.Posts4Lines
+import com.sg.posti10.util.Tools
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         supportActionBar?.hide()
         val drawPostHelper = DrawPostHelper()
-        val tool=Tools()
+        val tool= Tools()
         val constraintLayout = findViewById<ConstraintLayout>(R.id.constraint_layout)
 
         val currentPost = FindPost().individualPost ()

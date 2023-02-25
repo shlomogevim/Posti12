@@ -1,7 +1,8 @@
-package com.sg.posti10
+package com.sg.posti10.util
 
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
+import com.sg.posti10.*
 
 class Tools {
  /*  fun extractPostNumFromFunctionName(): Int {

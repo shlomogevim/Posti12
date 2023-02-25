@@ -1,10 +1,12 @@
 package com.sg.posti10.posts
 
 import com.sg.posti10.*
+import com.sg.posti10.util.DemiPost
+import com.sg.posti10.util.Tools
 
 class Posts11Lines {
-      val tool=Tools()
-      val demi=DemiPost()
+      val tool= Tools()
+      val demi= DemiPost()
        var margin=0
 
       fun loadPost1100(): Post {

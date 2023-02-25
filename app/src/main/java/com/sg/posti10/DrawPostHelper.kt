@@ -16,9 +16,10 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.core.content.res.ResourcesCompat
 import com.bumptech.glide.Glide
+import com.sg.posti10.util.Helper
 
 class DrawPostHelper: AppCompatActivity() {
-    val helper=Helper()
+    val helper= Helper()
     lateinit var layout: ConstraintLayout
     //    lateinit var currentPost:Post
     var position1=""
