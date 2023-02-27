@@ -328,7 +328,7 @@ class Posts4Lines {
         }
         return post
     }
-    fun loadPost415(): Post {
+    fun loadPost415(): Post {   //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2018/10/12/13/36/soder-3742220_1280.jpg"
@@ -454,7 +454,7 @@ class Posts4Lines {
         }
         return post
     }
-    fun loadPost421(): Post {
+    fun loadPost421(): Post {  //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2015/07/25/11/49/sea-859517_1280.jpg"
@@ -496,7 +496,7 @@ class Posts4Lines {
         }
         return post
     }
-    fun loadPost423(): Post {
+    fun loadPost423(): Post { //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2017/08/07/08/46/city-2601562_1280.jpg"
@@ -559,7 +559,7 @@ class Posts4Lines {
         }
         return post
     }
-    fun loadPost426(): Post {
+    fun loadPost426(): Post {  //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2020/04/20/15/55/flame-5068748_1280.jpg"
@@ -748,7 +748,7 @@ class Posts4Lines {
         }
         return post
     }
-    fun loadPost435(): Post {
+    fun loadPost435(): Post { //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2015/06/22/08/37/children-817365_1280.jpg"
@@ -895,7 +895,7 @@ class Posts4Lines {
         }
         return post
     }
-    fun loadPost442(): Post {
+    fun loadPost442(): Post {  //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2015/12/04/09/34/crawl-1076324_1280.jpg"
@@ -1042,7 +1042,7 @@ class Posts4Lines {
         }
         return post
     }
-    fun loadPost449(): Post {
+    fun loadPost449(): Post {  //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2023/02/13/20/49/old-man-7788342_960_720.jpg"
@@ -1063,7 +1063,7 @@ class Posts4Lines {
         }
         return post
     }
-   fun loadPost450(): Post {
+   fun loadPost450(): Post {  //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2017/11/01/16/48/cube-2908605_1280.jpg"

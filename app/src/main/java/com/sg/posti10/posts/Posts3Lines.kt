@@ -210,7 +210,7 @@ class Posts3Lines {
         }
         return post
     }
-    fun loadPost310(): Post {
+    fun loadPost310(): Post {  //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2021/12/21/10/16/barbed-wire-6884984_1280.jpg"
@@ -290,7 +290,7 @@ class Posts3Lines {
         }
         return post
     }
-    fun loadPost314(): Post {
+    fun loadPost314(): Post {  //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2014/02/22/20/51/rivers-272352_1280.jpg"
@@ -570,7 +570,7 @@ class Posts3Lines {
         }
         return post
     }
-    fun loadPost328(): Post {
+    fun loadPost328(): Post {  //f
         var post = Post()
         with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2014/09/19/17/18/rag-doll-452774_1280.jpg"
@@ -4295,4 +4295,25 @@ fun loadPost3999011(): Post {
         }
         return post
     }
+    fun loadPost3_999_024(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/08/08/08/10/cow-2610663_960_720.jpg"
+            postText = arrayListOf(
+                " אתה יכול לשחוט לי פרות קדושות ",
+                " זה מן הסתם גורלם של פרות, ",
+                "  אבל אתה לא יכול לגעת בקדושה. ",
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
  }
