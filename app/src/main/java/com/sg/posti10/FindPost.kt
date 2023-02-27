@@ -25,7 +25,7 @@ class FindPost {
 //post=posts1Lines.loadPost100()
 //post=posts1Lines.loadPost103()
 //---------
-        post=posts2Lines.loadPost200()
+//        post=posts2Lines.loadPost200()
 //        post=posts2Lines.loadPost299()
 //        post=posts2Lines.loadPost29900()
 //        post=posts2Lines.loadPost29_916()
@@ -48,7 +48,7 @@ class FindPost {
 //           post = posts4Lines.loadPost4999076()
 //        post = posts4Lines.loadPost4_999_078()
 //---------
-//        post = posts5Lines.loadPost596()
+        post = posts5Lines.loadPost596()
 //        post = posts5Lines.loadPost599()
 //        post = posts5Lines.loadPost5_999_000()
 //        post = posts5Lines.loadPost5_999_006()
