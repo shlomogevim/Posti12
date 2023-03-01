@@ -53,10 +53,10 @@ class FindPost {
 //        post = posts5Lines.loadPost5_999_000()
 //        post = posts5Lines.loadPost5_999_006()
 //---------
-        post = posts6Lines.loadPost600()
+//        post = posts6Lines.loadPost600()
 //        post = posts6Lines.loadPost656()
 //---------
-//        post = posts7Lines.loadPost718()
+        post = posts7Lines.loadPost718()
 //        post = posts7Lines.loadPost719()
 //---------
 //        post = posts8Lines.loadPost814()
