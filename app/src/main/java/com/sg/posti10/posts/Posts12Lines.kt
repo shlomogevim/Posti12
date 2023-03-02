@@ -30,8 +30,8 @@ class Posts12Lines {
             postTransparency =0
             postTextSize = arrayListOf(0,14)
             margin=0
-            val colorIndex=20
-            val selector=2
+            val colorIndex=10
+            val selector=1
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
             post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
