@@ -8,80 +8,84 @@ class Posts8Lines {
       val tool= Tools()
       val demi= DemiPost()
        var margin=0
-
-/*    fun loadPost801() {
-        val post = Post()
+    fun loadPost800(): Post {
+        var post = Post()
         with(post) {
-            postNum = 801
-            lineNum = 8
-            postId = 70
+            imageUri = "https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_960_720.jpg"
+            postText = arrayListOf(
+                "  ולשאלה מי אתה אחרי הכל:  ",
+                "  זה מה שאתה חושב שאתה  ",
+                "  או מה שאחרים חושבים שאתה ?   ",
+                "  למרות שאתה נמצא עם עצמך די הרבה   ",
+                "  אבל בתחום המחשבה,  ",
+                "  בדרך כלל האחרים  ",
+                "  שרואים אותך במציאות  ",
+                "  יודעים טוב יותר מי אתה.  "
+            )
+                      postTransparency =10
+            postTextSize = arrayListOf(0,14)
+            margin=5
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+    fun loadPost801(): Post {
+        var post = Post()
+        with(post) {
             imageUri = "https://cdn.pixabay.com/photo/2019/11/07/20/44/dog-4609870_1280.jpg"
             postText = arrayListOf(
-                "הכלבים על הבוקר רצים בתזזיתיות",
-                "משיח לשיח, מריחים  פה מריחים שם",
-                "מי עשה מה, איפה ומתי, ",
-                "האדם נע על הבוקר ברחבי הרשת",
-                "מאתר לאתר, קורא פה קורא שם ",
-                "מי עשה מה, איפה ומתי,",
-                "ונראה שאם היית פחות הכלב שבך ",
-                "הבוקר שלך היה רגוע יותר."
+                "  הכלבים על הבוקר רצים בתזזיתיות  ",
+                "  משיח לשיח, מריחים  פה מריחים שם  ",
+                "  מי עשה מה, איפה ומתי,   ",
+                "  האדם נע על הבוקר ברחבי הרשת  ",
+                "  מאתר לאתר, קורא פה קורא שם   ",
+                "  מי עשה מה, איפה ומתי,  ",
+                "  ונראה שאם היית פחות הכלב שבך  ",
+                "  הבוקר שלך היה רגוע יותר.  "
             )
-            postBackground = "000000"
-            postTransparency = 4
-            postTextSize = arrayListOf(0, 15)
-            textLocation = arrayListOf(10, -1, 30, 10, 0, 0, 0, 0)
-            postPadding = arrayListOf(10, 0, 10, 0)
-            val col = "#ffffff"
-            postTextColor = arrayListOf(CONSTANT, col)
-            postFontFamily = 103
-            postRadiuas = 15
-            lineSpacing = 1.4f
+            postTransparency =10
+            postTextSize = arrayListOf(0,14)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-        pref.edit().putString(SHARPREF_MOVING_BACKGROUND, TRUE).apply()
-//    pref.edit().putString(SHARPREF_MOVING_BACKGROUND, FALSE).apply()
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestoreWithoutChangingTimeStamp(post)
+        return post
     }
-
-    fun loadPost802() {
-        val post = Post()
+    fun loadPost802(): Post {
+        var post = Post()
         with(post) {
-            postNum = 802
-            lineNum = 8
-            postId = 76
-            imageUri = "https://cdn.pixabay.com/photo/2020/11/06/07/42/girl-5717067_1280.jpg"
+            imageUri = "https://cdn.pixabay.com/photo/2017/10/23/12/33/mobile-phone-2880930_960_720.jpg"
             postText = arrayListOf(
-                "כמה שאתה שומע יותר חדשות",
-                "אתה פחות יודע מה קורה באמת,",
-                "כמה שיש לך יותר זמן פנוי ",
-                "אתה פחות פנוי,",
-                "כמה שיש לך יותר קבוצות וואסאפ  ",
-                "יש לך פחות חברים,",
-                "כמה שאתה משתדל להבין את עצמך, ",
-                "אתה פחות תופס מי אתה. "
+                "  כמה שאתה שומע יותר חדשות  ",
+                "  אתה פחות יודע מה קורה באמת,  ",
+                "  כמה שיש לך יותר זמן פנוי ",
+                "  אתה פחות פנוי,  ",
+                "  כמה שיש לך יותר קבוצות וואסאפ  ",
+                "  יש לך פחות חברים,  ",
+                "  כמה שאתה משתדל להבין את עצמך, ",
+                "  אתה פחות תופס מי אתה. "
             )
-            postBackground = "#606060"
-            postTransparency = 7
-            postTextSize = arrayListOf(0, 18)
-            val col = "#D6ED17"
-            val col1 = "#4dd0e1"
-            postTextColor = arrayListOf(CONSTANT, col, col1, col1)
-            textLocation = arrayListOf(10, -1, 30, 10, 0, 0, 0, 0)            //top
-            postPadding = arrayListOf(10, 0, 10, 0)
-            postRadiuas = 16
-            lineSpacing = 1.4f
+            postTransparency =10
+            postTextSize = arrayListOf(0,14)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestoreWithoutChangingTimeStamp(post)
+        return post
     }
-
-    fun loadPost803() {
-        val post = Post()
+    fun loadPost803(): Post {
+        var post = Post()
         with(post) {
-            postNum = 803
-            postId = 70
-            lineNum = 8
             imageUri = "https://cdn.pixabay.com/photo/2016/03/10/17/01/stage-1248769_1280.jpg"
             postText = arrayListOf(
                 " אתה דמות מסרט, ",
@@ -93,35 +97,24 @@ class Posts8Lines {
                 " אבל אתה לא משתמש בהם ",
                 " כי זה מחוץ לתפקיד שלך. "
             )
-
-            postTransparency = 9
-            postTextSize = arrayListOf(0, 16)
-            val backgroundColor = "0A174E"
-            val textColor = "#F5D042"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
-            textLocation = arrayListOf(10, -1, 35, 10, 0, 35, 4, 35)            //top
-            postPadding = arrayListOf(0, 0, 0, 0)
-            postRadiuas = 16
-            lineSpacing = 1.4f
+            postTransparency =10
+            postTextSize = arrayListOf(0,14)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestoreWithoutChangingTimeStamp(post)
+        return post
     }
-
-    fun loadPost804() {
-        val post = Post()
+    fun loadPost804(): Post {
+        var post = Post()
         with(post) {
-            postNum = 804
-            postId = 75
-            lineNum = 8
             imageUri = "https://cdn.pixabay.com/photo/2017/05/30/16/35/galaxy-2357504_1280.jpg"
             postText = arrayListOf(
                 "  האדם בבוקר השכם  ",
-                "  הוא כרוח אלוהים על פני תהום ",
+                "  הוא כרוח אלוהים על פני תהום, ",
                 "ואחר כך הוא יוצר לעצמו את הים והשמים ",
                 " את היבשה את העשב ואת בעלי החיים ",
                 " ובסוף הוא יוצר את עצמו ברגע שהוא נכנס לדמות שלו. ",
@@ -129,34 +122,20 @@ class Posts8Lines {
                 " כרוח אלוהים על פני המים ",
                 " לפני כל עבודת הבריאה הזו. "
             )
-            postTransparency = 4
-            postTextSize = arrayListOf(0, 14)
-            val backgroundColor = "0A174E"
-            val textColor = "#F5D042"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
-            textLocation = arrayListOf(10, -1, 30, 10, 3, 30, 0, 0)
-           postPadding = arrayListOf(0, 5, 0, 0)
-            postRadiuas = 16
-            lineSpacing = 1.4f
-            videoUrl="FhRgXyH1BC4"
-            videoText=util1.getVideoText(postNum)
+            postTransparency =10
+            postTextSize = arrayListOf(0,14)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-//        pref.edit().putString(SHARPREF_MOVING_BACKGROUND, TRUE).apply()
-//        pref.edit().putString(SHARPREF_MOVING_BACKGROUND, FALSE).apply()
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestoreWithoutChangingTimeStamp(post)
+        return post
     }
-
-    fun loadPost805() {
-        val post = Post()
+    fun loadPost805(): Post {
+        var post = Post()
         with(post) {
-            postNum = 805
-            postId = 75
-            lineNum = 8
             imageUri = "https://cdn.pixabay.com/photo/2018/12/29/19/53/food-3902073_1280.jpg"
             postText = arrayListOf(
                 "  ג'אנק-פוד כמו  ",
@@ -168,37 +147,24 @@ class Posts8Lines {
                 " מעניינים בטירוף ",
                 " אבל שורפים לך את המודעות. "
             )
-            postTransparency = 6
-            postTextSize = arrayListOf(0, 14)
-            val backgroundColor = "0A174E"
-            val textColor = "#F5D042"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
-            textLocation = arrayListOf(10, -1, 30, 10, 0, 0, 0, 0)     //bottom
-//            textLocation = arrayListOf(100, 6, 30, -1)     //up
-            postPadding = arrayListOf(0, 0, 0, 0)
-            postRadiuas = 16
-            lineSpacing = 1.4f
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-        pref.edit().putString(SHARPREF_MOVING_BACKGROUND, TRUE).apply()
-//        pref.edit().putString(SHARPREF_MOVING_BACKGROUND, FALSE).apply()
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestoreWithoutChangingTimeStamp(post)
+        return post
     }
-
-    fun loadPost806() {
-        val post = Post()
+    fun loadPost806(): Post {
+        var post = Post()
         with(post) {
-            postNum = 806
-            postId = 84
-            lineNum = 8
             imageUri = "https://cdn.pixabay.com/photo/2017/08/02/13/02/people-2571488_1280.jpg"
             postText = arrayListOf(
                 "  האמת קיימת ולא משתנה,  ",
-                "  האמת הזו ",
+                "     האמת הזו    ",
                 " לפי אנשי החדשות היא לא מעניינת ",
                 " לפי אנשי הרכילות היא ממש לא סיפור ",
                 " לפי אנשי המסיבות היא לא צבעונית ",
@@ -206,104 +172,74 @@ class Posts8Lines {
                 " ולפי הנטרפים ברוחות השינויים ",
                 " היא הנחמה. "
             )
-            postTransparency = 0
-            postTextSize = arrayListOf(0, 15)
-            val backgroundColor = "0A174E"
-            val textColor = "#F5D042"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
-            textLocation = arrayListOf(10, -1, 32, 10, 0, 0, 0, 0)
-            postPadding = arrayListOf(0, 0, 0, 0)
-            postRadiuas = 16
-            lineSpacing = 1.3f
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=10
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestoreWithoutChangingTimeStamp(post)
+        return post
     }
-        fun loadPost807() {
-        val post = Post()
+    fun loadPost807(): Post {
+        var post = Post()
         with(post) {
-            postNum = 807
-            postId = 85
-            lineNum = 8
             imageUri = "https://cdn.pixabay.com/photo/2015/10/30/12/18/thumb-1013968_1280.jpg"
             postText = arrayListOf(
                 " גם אם הכל יהיה בסדר ",
                 " משהוא יהיה לא בסדר, ",
-                " ואיך זה ? ",
+                "      ואיך זה ?      ",
                 "ה\"בסדר\" וה\"לא בסדר\"",
                 " הם מרכזים הקיימים באדם כל הזמן ",
-                " ללא תלות מה קורה מסביב, ",
+                "   ללא תלות מה קורה מסביב,   ",
                 " ובזמנים שהכל מסתדר סביבך בסדר, אבל אתה מתמקד בלא בסדר, ",
                 " אז יש אלמנט של \"לא בסדר\" בכל ה\"בסדר\" הזה. "
             )
-            postId = 84
-//            textLocation = arrayListOf(10,-1, 30,10,5, 30,6, 30)
-            textLocation = arrayListOf(10,5, 30,-1,3, 410,7,30)
-            postPadding = arrayListOf(5, 0, 5,0)
-            postTransparency =6
-            postTextSize = arrayListOf(0, 14)
-            val backgroundColor = "#000000"
-            val textColor = "#ffffff"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
-            postRadiuas = 16
-            lineSpacing = 1.4f
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestore(post)
+        return post
     }
-      fun loadPost808() {
-        val post = Post()
+    fun loadPost808(): Post {
+        var post = Post()
         with(post) {
-            postNum = 808
-            postId = 85
-            lineNum = 8
             imageUri = "https://cdn.pixabay.com/photo/2022/02/07/16/39/swamp-6999795_1280.jpg"
             postText = arrayListOf(
                 " אצלנו בביצה המקומית ",
                 " בין הטחב של הזיכרונות, ",
                 " החלומות המשומשים, ",
-                "השגרה חסרת המשמעות,",
+                "  השגרה חסרת המשמעות,  ",
                 " הזוהמה של הפוליטיקה, ",
                 " הצורך שלא להיטרף, ",
-                "וההכרח להישאר שפוי כמו כולם",
-                " כל צפרדע חולמת להיות נרקיס."
+                "  וההכרח להישאר שפוי כמו כולם  ",
+                "  כל צפרדע חולמת להיות נרקיס. "
             )
-            postId = 85
-            textLocation = arrayListOf(10, -1, 30,10, 0, 0, 0, 0)
-            postPadding = arrayListOf(0, 0, 0, 0)
-            postTransparency =4
-            postTextSize = arrayListOf(0, 16)
-            val backgroundColor = "#000000"
-            val textColor = "#ffffff"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
-            videoUrl="M20Z8V9nelo"
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestore(post)
+        return post
     }
-
-    fun loadPost809() {
-        val post = Post()
+    fun loadPost809(): Post {
+        var post = Post()
         with(post) {
-            postNum = 809
-            postId = 85
-            lineNum = 8
             imageUri = "https://cdn.pixabay.com/photo/2016/10/18/05/19/old-man-1749360_1280.jpg"
             postText = arrayListOf(
                 " יש לך בחייך שלשה משאבים מוגבלים בכמותם: ",
-                " הכסף שלך, הבריאות שלך והמודעות שלך. ",
+                " הכסף הבריאות והמודעות שלך. ",
                 " את הכסף שלך ",
                 "אתה שומר מכל משמר,",
                 " את הבריאות שלך ",
@@ -311,28 +247,20 @@ class Posts8Lines {
                 "ואת המודעות שלך",
                 " אתה משחית חופשי על כל הבל."
             )
-            postId = 89
-            textLocation = arrayListOf(10, -1, 30,5, 0, 35, 0, 0)
-            postPadding = arrayListOf(0, 0, 0, 0)
-            postTransparency =4
-            postTextSize = arrayListOf(0, 16)
-            val backgroundColor = "#000000"
-            val textColor = "#ffffff"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
+            postTransparency =0
+            postTextSize = arrayListOf(0,15)
+            margin=20
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestore(post)
+        return post
     }
-
-    fun loadPost810() {
-        val post = Post()
+    fun loadPost810(): Post {
+        var post = Post()
         with(post) {
-            postNum = 810
-           lineNum = 8
             imageUri = "https://cdn.pixabay.com/photo/2013/02/09/04/15/doctor-79579_1280.jpg"
             postText = arrayListOf(
                 " כשאיבר בגוף שלך עובד מושלם  ",
@@ -344,28 +272,20 @@ class Posts8Lines {
                 " שממוקד בחוסר השלמות, ",
                 " השלמות לא עושה לך דבר."
             )
-            postId = 86
-            textLocation = arrayListOf(10, -1, 30,5, 0, 0, 0, 0)
-            postPadding = arrayListOf(0, 0, 0, 0)
-            postTransparency =4
-            postTextSize = arrayListOf(0, 16)
-            val backgroundColor = "#000000"
-            val textColor = "#ffffff"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestore(post)
+        return post
     }
-
-    fun loadPost811() {
-        val post = Post()
+    fun loadPost811(): Post {
+        var post = Post()
         with(post) {
-            postNum = 811
-            lineNum = 8
             imageUri = "https://cdn.pixabay.com/photo/2017/04/26/23/46/man-2264051_1280.jpg"
             postText = arrayListOf(
                 " מעטים האנשים ",
@@ -377,61 +297,46 @@ class Posts8Lines {
                 " וזה לא תלוי במה יש לו  ",
                 " אלא במה שחסר לו ברגע זה."
             )
-            postId = 86
-            textLocation = arrayListOf(10, 5, 30,-1, 0, 0, 0, 0)
-            postPadding = arrayListOf(0, 0, 0, 0)
-            postTransparency =4
-            postTextSize = arrayListOf(0, 14)
-            val backgroundColor = "#000000"
-            val textColor = "#ffffff"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestore(post)
+        return post
     }
-       fun loadPost812() { //N
-        val post = Post()
+    fun loadPost812(): Post {
+        var post = Post()
         with(post) {
-            postNum = 812
-            lineNum = 8
-            imageUri = "https://cdn.pixabay.com/photo/2016/07/01/22/34/people-1492052_1280.jpg"
+            imageUri = "https://cdn.pixabay.com/photo/2018/02/09/11/40/girl-3141445_960_720.jpg"
             postText = arrayListOf(
-                " רבי נחמן אמר: ",
+                " רבי נחמן אמר:   ",
                 " \"אין ייאוש בעולם כלל\" ",
-                "ולמה התכוון, ",
+                " ולמה הוא התכוון, ",
                 " העולם הוא מה שהוא, ",
-                " האדם יוצר ממנו: ",
+                "    האדם יוצר ממנו:    ",
                 " שמחה, דאגה, אמונה וייאוש, ",
-                " אבל בעולם עצמו  ",
-                " אין ייאוש כלל."
+                "     אבל בעולם עצמו      ",
+                "       אין ייאוש כלל.       "
             )
-            postId = 89
-            textLocation = arrayListOf(10, -1, 28,200, 0, 0, 0, 0)
-            postPadding = arrayListOf(10, 0, 10, 0)
-            postTransparency =8
-            postTextSize = arrayListOf(0, 14)
-            val backgroundColor = "#000000"
-            val textColor = "#ffffff"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestore(post)
+        return post
     }
-
-    fun loadPost813() { //N
-        val post = Post()
+    fun loadPost813(): Post {
+        var post = Post()
         with(post) {
-            postNum = 813
-            lineNum = 8
-            imageUri = "https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593360_960_720.jpg"
+            imageUri = "https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_960_720.jpg"
             postText = arrayListOf(
                 " גן העדן ",
                 " הוא כמו מלונות הכל כלול ",
@@ -439,60 +344,20 @@ class Posts8Lines {
                 " האלוהים גירש את האדם מגן העדן ",
                 " כדי למנוע אותו מזה, ",
                 " וכך האדם נזרק לאדמה הזו ",
-                " ותוך המחסור היומיומי שמסביב  ",
+                " ומתוך המחסור היומיומי שמסביב  ",
                 " נוצרת היצירה האנושית."
             )
-            postId = 82
-            textLocation = arrayListOf(10, 220, 28,-1, 0, 0, 0, 0)
-            postPadding = arrayListOf(10, 0, 10, 0)
-            postTransparency =8
-            postTextSize = arrayListOf(0, 14)
-            val backgroundColor = "#000000"
-            val textColor = "#ffffff"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=13
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
         }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestore(post)
+        return post
     }
-
-    fun loadPost814() { //N
-        val post = Post()
-        with(post) {
-            postNum = 814
-            lineNum = 8
-            imageUri = "https://cdn.pixabay.com/photo/2018/03/04/23/32/book-3199610_960_720.jpg"
-            postText = arrayListOf(
-                " המחשבה היא כלי הישרדותי, ",
-                " היא נועדה לנתח מצבים  ",
-                " כדי לגבש דרכי תגובה בעולם עוין,  ",
-                " שירה היא כלי אומנותי ",
-                " שבאה לתאר את החיים סביב ",
-                " כדי לתת לעצמך קצת הבנה על העולם, ",
-                " ולאדם המודרני מומלץ  ",
-                " עשה יותר שירה ופחות מחשבה. "
-            )
-            postId = 87
-            textLocation = arrayListOf(10, -1, 28,140, 0, 0, 0, 0)
-            postPadding = arrayListOf(10, 0, 10, 0)
-            postTransparency =8
-            postTextSize = arrayListOf(0, 14)
-            val backgroundColor = "#000000"
-            val textColor = "#ffffff"
-            postFontFamily = 103
-            postBackground = util.improveColorString(backgroundColor)
-            val textcolo = util.improveColorString(textColor)
-            val col = "#$textcolo"
-            postTextColor = arrayListOf(CONSTANT, col)
-        }
-        drawPost.drawPostFire(post, layout)
-        util.sendPostToStringFirestore(post)
-    }
-}*/
-
       fun loadPost814(): Post {
         var post = Post()
         with(post) {
