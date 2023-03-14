@@ -3,6 +3,7 @@ package com.sg.posti10.util
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import com.sg.posti10.*
+import com.sg.posti10.model.Post
 
 class Tools {
  /*  fun extractPostNumFromFunctionName(): Int {

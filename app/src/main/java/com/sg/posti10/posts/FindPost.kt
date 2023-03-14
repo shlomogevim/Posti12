@@ -1,6 +1,7 @@
-package com.sg.posti10
+package com.sg.posti10.posts
 
-import com.sg.posti10.posts.*
+import com.sg.posti10.model.Post
+import com.sg.posti10.posts.allPosts.*
 
 class FindPost {
     var cP = Post()
@@ -28,7 +29,7 @@ class FindPost {
 //        post=posts2Lines.loadPost200()
 //        post=posts2Lines.loadPost299()
 //        post=posts2Lines.loadPost29900()
-//        post=posts2Lines.loadPost29_916()
+//        post=posts2Lines.loadPost29_917()
 //---------
 //              post = posts3Lines.loadPost300()
 //              post = posts3Lines.loadPost390()

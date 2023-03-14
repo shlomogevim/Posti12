@@ -1,4 +1,4 @@
-package com.sg.posti10
+package com.sg.posti10.model
 
 import com.google.firebase.Timestamp
 

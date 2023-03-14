@@ -1,6 +1,6 @@
-package com.sg.posti10.posts
+package com.sg.posti10.posts.allPosts
 
-import com.sg.posti10.*
+import com.sg.posti10.model.Post
 import com.sg.posti10.util.DemiPost
 import com.sg.posti10.util.Tools
 
@@ -2230,6 +2230,25 @@ fun loadPost29915(): Post {
             postTransparency =0
             postTextSize = arrayListOf(0,16)
             margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+   fun loadPost29_917(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2023/02/10/13/44/gorilla-7780902_960_720.jpg"
+            postText = arrayListOf(
+                " שמור אותי מעצמי ",
+                " משאר העולם אני כבר אשמר. "
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,16)
+            margin=10
             val colorIndex=28
             val selector=1
             val fontFamily=103

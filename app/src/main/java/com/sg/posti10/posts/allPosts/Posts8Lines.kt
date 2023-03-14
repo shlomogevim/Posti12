@@ -1,6 +1,6 @@
-package com.sg.posti10.posts
+package com.sg.posti10.posts.allPosts
 
-import com.sg.posti10.*
+import com.sg.posti10.model.Post
 import com.sg.posti10.util.DemiPost
 import com.sg.posti10.util.Tools
 

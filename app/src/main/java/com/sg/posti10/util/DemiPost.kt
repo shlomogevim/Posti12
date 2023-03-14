@@ -3,7 +3,7 @@ package com.sg.posti10.util
 import android.content.res.Resources
 import android.util.Log
 import com.sg.posti10.CONSTANT
-import com.sg.posti10.Post
+import com.sg.posti10.model.Post
 
 class DemiPost {
     var colorA=""

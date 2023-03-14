@@ -6,6 +6,8 @@ import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import com.sg.posti10.*
+import com.sg.posti10.model.Article
+import com.sg.posti10.model.Post
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
 
@@ -457,27 +459,8 @@ class Utility() {
             .update(data)
     }
 
-    fun logi(
-        element1: String,
-        element2: String = "",
-        element3: String = "",
-        element4: String = ""
-    ) {
-        if (element1 != "" && element2 == "" && element3 == "" && element4 == "") {
-            Log.d("gg", "${element1}")
-        }
-        if (element1 != "" && element2 != "" && element3 == "" && element4 == "") {
-            Log.d("gg", "${element1} ,${element2}")
-        }
-        if (element1 != "" && element2 != "" && element3 != "" && element4 == "") {
-            Log.d("gg", "${element1} ,${element2} ,${element3}")
-        }
-        if (element1 != "" && element2 != "" && element3 != "" && element4 != "") {
-            Log.d("gg", "${element1} ,${element2} ${element3},${element4}")
-        }
-    }
 
-   /* fun sendArticleToStringFirestore(article: Article) {
+    fun sendArticleToStringFirestore(article: Article) {
         val data = HashMap<String, Any>()
         with(article) {
             data[ARTICAL_NUM] = aricleNum
@@ -489,9 +472,9 @@ class Utility() {
             data[ARTICAL_FONT_FAMILY] = articleFontFamily
             data[ARTICAL_TIMESTAMP] = FieldValue.serverTimestamp()
         }
-            FirebaseFirestore.getInstance().collection(ARTICAL_REF).document(article.aricleNum.toString())
-                .set(data)
-        }*/
+        FirebaseFirestore.getInstance().collection(ARTICAL_REF).document(article.aricleNum.toString())
+            .set(data)
+    }
     }
 
 

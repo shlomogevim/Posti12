@@ -1,4 +1,4 @@
-package com.sg.posti10
+package com.sg.posti10.posts
 
 import android.content.Context
 import android.content.res.Resources
@@ -16,6 +16,9 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.core.content.res.ResourcesCompat
 import com.bumptech.glide.Glide
+import com.sg.posti10.BOTTOM
+import com.sg.posti10.model.Post
+import com.sg.posti10.TOP
 import com.sg.posti10.util.Helper
 
 class DrawPostHelper: AppCompatActivity() {
@@ -32,12 +35,12 @@ class DrawPostHelper: AppCompatActivity() {
       createText(constraintLayout,currentPost)
 
     }
-    private fun setCurrentParameters(currentPost:Post) {
+    private fun setCurrentParameters(currentPost: Post) {
         //    textLocation = arrayListOf(10,-1, 33,10,0,0, 0, 0)
         val dataAr =currentPost.textLocation
         dis1 = dataAr[2]
         if (dataAr[1] == -1) {
-            position1 =TOP
+            position1 = TOP
             margin1= dataAr[3]
         }
         if (dataAr[3] == -1) {
@@ -46,7 +49,7 @@ class DrawPostHelper: AppCompatActivity() {
         }
 //        logi("56 dis1=$dis1        position1=$position1     margin1=$margin1")
     }
-    private fun createText(constraintLayout: ConstraintLayout, post:Post) {
+    private fun createText(constraintLayout: ConstraintLayout, post: Post) {
         //    textLocation = arrayListOf(10,-1, 33,10,0,0, 0, 0)
 //        val mainLayout = createMainLayout(this,post)
         val mainLayout = createLinearLayout(layout.context,post)
@@ -64,7 +67,7 @@ class DrawPostHelper: AppCompatActivity() {
         constraintSet.applyTo(constraintLayout)
         //setContentView(constraintLayout)
     }
-    fun createLinearLayout(context: Context,post:Post): LinearLayout {
+    fun createLinearLayout(context: Context,post: Post): LinearLayout {
         val ll1 = LinearLayout(context)
         ll1.orientation = LinearLayout.VERTICAL
         ll1.gravity= Gravity.CENTER_HORIZONTAL
@@ -85,7 +88,7 @@ class DrawPostHelper: AppCompatActivity() {
         return ll1
     }
 
-   private fun createTextViews(context: Context, post:Post): Array<TextView?> {
+   private fun createTextViews(context: Context, post: Post): Array<TextView?> {
        val textViews = arrayOfNulls<TextView>(post.postText.size)
        for (index in 0 until post.postText.size) {
            textViews[index] = createTextView(context, post, index)
@@ -93,7 +96,7 @@ class DrawPostHelper: AppCompatActivity() {
        return textViews
    }
 
-    private fun createTextView(context: Context, post:Post, index:Int): TextView {
+    private fun createTextView(context: Context, post: Post, index:Int): TextView {
         val textView = TextView(context)
         textView.id = View.generateViewId()
        textView.gravity = Gravity.CENTER_HORIZONTAL

@@ -1,7 +1,7 @@
 package com.sg.posti10.util
 
 import com.sg.posti10.CONSTANT
-import com.sg.posti10.Post
+import com.sg.posti10.model.Post
 
 
 class CreatePost  {
