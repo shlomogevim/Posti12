@@ -11,28 +11,28 @@ class Posts10Lines {
     fun loadPost1000(): Post {
         var post = Post()
         with(post) {
-            imageUri =
-                "https://cdn.pixabay.com/photo/2018/02/15/19/42/sunset-3156176_1280.jpghttps://cdn.pixabay.com/photo/2018/02/15/19/42/sunset-3156176_1280.jpg"
+            imageUri = "https://cdn.pixabay.com/photo/2020/01/20/22/21/palace-4781577_960_720.jpg"
             postText = arrayListOf(
-                " יש לך טעות בסיסית, ",
-                " כדי שהכל יסתדר ",
-                " לא צריך שכל העולם יהיה בסדר ",
-                " שיהיה שלום עולמי ",
-                " ויגמרו כל הרשע הצער והכאב ",
-                " ממש לא, ",
-                " כדי שהכל יסתדר ",
-                "  מספיק שאתה אישית  ",
-                " תרגיש בסדר עם עצמך לרגע, ",
-                " זה הכול. "
+                " החיים שלך ",
+                " זה איך שאתה תופס אותם, ",
+                " אתה תופס אותם כטוב ",
+                " אתה חי בטוב, ",
+                " אתה תופס אותם כרע  ",
+                " אתה חי ברע, ",
+                " כך שאם אתה שואל: ",
+                " מי זה האלוהים הזה ",
+                " שקובע לי איך החיים שלי יהיו ? ",
+                " זהו, שזה אתה. "
             )
-            postTransparency =10
-            postTextSize = arrayListOf(0,13)
+            postTransparency =8
+            postTextSize = arrayListOf(0,14)
             margin=0
-            val colorIndex=18
+            val colorIndex=45
             val selector=2
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+
         }
         return post
     }
@@ -165,40 +165,14 @@ class Posts10Lines {
             margin=0
             val colorIndex=10
             val selector=1
+            val grade=78
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
         }
         return post
     }
-      fun loadPost1006(): Post {
-        var post = Post()
-        with(post) {
-            imageUri = "https://cdn.pixabay.com/photo/2020/01/20/22/21/palace-4781577_960_720.jpg"
-            postText = arrayListOf(
-                " החיים שלך ",
-                " זה איך שאתה תופס אותם, ",
-                " אתה תופס אותם כטוב ",
-                " אתה חי בטוב, ",
-                " אתה תופס אותם כרע  ",
-                " אתה חי ברע, ",
-                " כך שאם אתה שואל: ",
-                " מי זה האלוהים הזה ",
-                " שקובע לי איך החיים שלי יהיו ? ",
-                " זהו, שזה אתה. "
-            )
-            postTransparency =8
-            postTextSize = arrayListOf(0,14)
-            margin=0
-            val colorIndex=45
-            val selector=2
-            val fontFamily=103
-            postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
 
-        }
-        return post
-    }
 
 
 

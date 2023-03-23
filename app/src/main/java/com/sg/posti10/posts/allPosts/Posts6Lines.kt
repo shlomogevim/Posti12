@@ -1,5 +1,6 @@
 package com.sg.posti10.posts.allPosts
 
+import android.util.Log
 import com.sg.posti10.model.Post
 import com.sg.posti10.util.DemiPost
 import com.sg.posti10.util.Tools
@@ -1327,7 +1328,57 @@ class Posts6Lines {
         return post
     }
 
-
-
-
+fun loadPost657(): Post {
+    var post = Post()
+    with(post) {
+        imageUri ="https://cdn.pixabay.com/photo/2023/03/02/11/38/man-7825138_960_720.jpg"
+        postText = arrayListOf(
+            " הנטייה הזו שלך  ",
+            " לעשות דברים מסוימים בצורה מסוימת ",
+            " מגדירה את האישיות שבך,  ",
+            " האמונה  שלך  ",
+            " באישיות הזאת ",
+            "  מגדירה את החופש שבך.  "
+        )
+        postTransparency =5
+        postTextSize = arrayListOf(0,15)
+        margin=0
+        val colorIndex=28
+        val selector=1
+        val fontFamily=103
+       val grade=75
+        postNum= tool.extractPostNumFromFunctionName()
+        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,
+                                                 margin,colorIndex,selector,fontFamily,grade)
+    }
+    return post
+}
+fun loadPost658(): Post {
+    var post = Post()
+    with(post) {
+        imageUri ="https://cdn.pixabay.com/photo/2018/11/17/23/46/boy-3822290_960_720.jpg"
+        postText = arrayListOf(
+            " האדם מרגיש רע עם עצמו  ",
+            " לא בגלל המודעות שלו ",
+            " לדברים שקורים,  ",
+            " אלא בעיקר  ",
+            " בגלל חוסר המודעות שלו ",
+            "  לדברים שקורים.  "
+        )
+        postTransparency =5
+        postTextSize = arrayListOf(0,15)
+        margin=10
+        val colorIndex=28
+        val selector=1
+        val fontFamily=103
+        val grade=78
+        postNum= tool.extractPostNumFromFunctionName()
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,
+                                    colorIndex,selector,fontFamily,grade)
+    }
+    return post
+}
+    fun logi(message: String) {
+        Log.i("gg", message)
+    }
  }

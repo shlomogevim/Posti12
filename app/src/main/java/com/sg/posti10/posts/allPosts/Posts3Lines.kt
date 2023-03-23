@@ -4316,4 +4316,88 @@ fun loadPost3999011(): Post {
         return post
     }
 
+    fun loadPost3_999_025(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2020/02/21/05/20/autumn-4866493_960_720.jpg"
+            postText = arrayListOf(
+                " כולנו רוצים שקט ושלווה, ",
+                " ושזה מגיע ",
+                "  אין לנו מושג מה לעשות בזה.  ",
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=79
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
+    fun loadPost3_999_026(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2020/05/14/20/16/algarve-5171222_960_720.jpg"
+            postText = arrayListOf(
+                " אתה נמצא במקום שאתה חושב עליו ",
+                " ואם חשבת רחוק מדי ",
+                "  רצוי שתמצא דרך לחזור הביתה.  ",
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,15)
+            margin=5
+            val colorIndex=19
+            val selector=2
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
+    fun loadPost3_999_027(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2015/11/02/16/17/london-1018629_960_720.jpg"
+            postText = arrayListOf(
+                " מי שלא מבין איך אנשים מסוימים ",
+                " עושים דברים מסוימים ",
+                "  לא מכיר את עצמו.  ",
+            )
+            postTransparency =3
+            postTextSize = arrayListOf(0,15)
+            margin=5
+            val colorIndex=20
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
+    fun loadPost3_999_028(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2018/10/08/09/47/rubiks-cube-3732404_960_720.jpg"
+            postText = arrayListOf(
+                " הגיון זה דבר חיובי ",
+                " כל זמן שהוא לא מפריע לך ",
+                "  להבין את עצמך.  ",
+            )
+            postTransparency =3
+            postTextSize = arrayListOf(0,16)
+            margin=25
+            val colorIndex=11
+            val selector=1
+            val grade=79
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
  }

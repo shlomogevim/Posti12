@@ -12,7 +12,7 @@ class DemiPost {
     fun logi(message: String) {
         Log.i("gg", message)
     }
-    fun demiPost100(postNum: Int, imageUri: String, postText: ArrayList<String>,
+  /*  fun demiPost100(postNum: Int, imageUri: String, postText: ArrayList<String>,
                     postTransparency: Int, postTextSize: ArrayList<Int>, margin: Int,colorIndex:Int,
                     selector: Int,fontFamily:Int,lineSpacing1:Float=1f): Post {
         val post = Post()
@@ -40,17 +40,75 @@ class DemiPost {
             this.videoUrl = "9UVjjcOUJLE"
         }
         return post
-    }
+    }*/
+ /* fun demiPost200(postNum: Int, imageUri: String, postText: ArrayList<String>,
+                  postTransparency: Int, postTextSize: ArrayList<Int>, margin: Int,colorIndex:Int, selector: Int,
+                  fontFamily:Int,lineSpacing1:Float=1f): Post {
+      val post = Post()
+      with(post) {
+          getColors(colorIndex)
+          this.postNum = postNum
+          this.imageUri = imageUri
+          this.postText = postText
+          this.postId = 87
+          this.textLocation = arrayListOf(10, -1, 0, margin.toPx(), 0, 0, 0, 0)  //up
+          this.postPadding = arrayListOf(0, 0, 0, 0)
+          this.postTransparency = postTransparency
+          this.postTextSize = postTextSize
+          if (selector==1) {
+              this.postBackground = colorA
+              this.postTextColor = arrayListOf(CONSTANT, colorB)
+          }else{
+              this.postBackground = colorB
+              this.postTextColor = arrayListOf(CONSTANT, colorA)
+          }
+//            this.lineSpacing=lineSpacing1
+          this.postFontFamily = fontFamily
+          this.videoUrl = "9UVjjcOUJLE"
+      }
+      return post
+  }*/
+
+  fun demiPost100(postNum: Int, imageUri: String, postText: ArrayList<String>,
+                         postTransparency: Int, postTextSize: ArrayList<Int>, margin: Int,colorIndex:Int,
+                         selector: Int,fontFamily:Int,grade:Int=50,lineSpacing:Float=1f,postId:Int=40): Post {
+      val post = Post()
+      with(post) {
+          getColors(colorIndex)
+          this.postNum = postNum
+          this.imageUri = imageUri
+          this.postText = postText
+          this.postId = postId
+          this.textLocation = arrayListOf(10, margin.toPx(), 0, -1, 0, 0, 0, 0)  //  Bottom
+          this.postPadding = arrayListOf(0, 0, 0, 0)
+          this.postTransparency = postTransparency
+          this.postTextSize = postTextSize
+          if (selector==1) {
+              this.postBackground = colorA
+              this.postTextColor = arrayListOf(CONSTANT, colorB)
+          }else{
+              this.postBackground = colorB
+              this.postTextColor = arrayListOf(CONSTANT, colorA)
+          }
+
+          this.lineSpacing=lineSpacing
+          this.postFontFamily = fontFamily
+          this.videoUrl = "9UVjjcOUJLE"
+          this.grade=grade
+      }
+      return post
+  }
+
     fun demiPost200(postNum: Int, imageUri: String, postText: ArrayList<String>,
                     postTransparency: Int, postTextSize: ArrayList<Int>, margin: Int,colorIndex:Int, selector: Int,
-                    fontFamily:Int,lineSpacing1:Float=1f): Post {
+                    fontFamily:Int,grade:Int=50,lineSpacing:Float=1f,postId:Int=40): Post {
         val post = Post()
         with(post) {
             getColors(colorIndex)
             this.postNum = postNum
             this.imageUri = imageUri
             this.postText = postText
-            this.postId = 87
+            this.postId = postId
             this.textLocation = arrayListOf(10, -1, 0, margin.toPx(), 0, 0, 0, 0)  //up
             this.postPadding = arrayListOf(0, 0, 0, 0)
             this.postTransparency = postTransparency
@@ -62,7 +120,8 @@ class DemiPost {
                 this.postBackground = colorB
                 this.postTextColor = arrayListOf(CONSTANT, colorA)
             }
-//            this.lineSpacing=lineSpacing1
+           this.lineSpacing=lineSpacing
+            this.grade=grade
             this.postFontFamily = fontFamily
             this.videoUrl = "9UVjjcOUJLE"
         }

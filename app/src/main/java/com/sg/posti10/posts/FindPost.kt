@@ -1,5 +1,6 @@
 package com.sg.posti10.posts
 
+import android.util.Log
 import com.sg.posti10.model.Post
 import com.sg.posti10.posts.allPosts.*
 
@@ -19,7 +20,9 @@ class FindPost {
     private val posts11Lines = Posts11Lines()
     private val posts12Lines = Posts12Lines()
 
-
+    fun logi(message: String) {
+        Log.i("gg", message)
+    }
     fun individualPost(): Post {
         var post = Post()
 
@@ -29,7 +32,7 @@ class FindPost {
 //        post=posts2Lines.loadPost200()
 //        post=posts2Lines.loadPost299()
 //        post=posts2Lines.loadPost29900()
-//        post=posts2Lines.loadPost29_917()
+//        post=posts2Lines.loadPost29_920()
 //---------
 //              post = posts3Lines.loadPost300()
 //              post = posts3Lines.loadPost390()
@@ -38,7 +41,7 @@ class FindPost {
 //              post = posts3Lines.loadPost3998()
 //              post = posts3Lines.loadPost3999()
 //              post = posts3Lines.loadPost3_999_000()
-//               post = posts3Lines.loadPost3_999_024()
+//               post = posts3Lines.loadPost3_999_028()
 //---------
 //        post = posts4Lines.loadPost400()
 //        post = posts4Lines.loadPost490()
@@ -47,15 +50,16 @@ class FindPost {
 //        post = posts4Lines.loadPost4_999_000()
 //        post = posts4Lines.loadPost4999050()
 //           post = posts4Lines.loadPost4999076()
-//        post = posts4Lines.loadPost4_999_078()
+//        post = posts4Lines.loadPost4_999_080()
 //---------
 //        post = posts5Lines.loadPost500()
 //        post = posts5Lines.loadPost599()
 //        post = posts5Lines.loadPost5_999_000()
-//        post = posts5Lines.loadPost5_999_006()
+//        post = posts5Lines.loadPost5_999_008()
 //---------
 //        post = posts6Lines.loadPost600()
-//        post = posts6Lines.loadPost656()
+//        post = posts6Lines.loadPost658()
+
 //---------
 //        post = posts7Lines.loadPost700()
 //        post = posts7Lines.loadPost719()
@@ -64,14 +68,14 @@ class FindPost {
 //        post = posts8Lines.loadPost814()
 //---------
 //        post = posts9Lines.loadPost902()
-//        post = posts9Lines.loadPost905()
+//        post = posts9Lines.loadPost906()
 //---------
-//        post = posts10Lines.loadPost1000()  //**
-//        post = posts10Lines.loadPost1006()
+//        post = posts10Lines.loadPost1000()
+//        post = posts10Lines.loadPost1005()
 //---------
 //        post = posts11Lines.loadPost1100()
 //---------
-//        post = posts12Lines.loadPost1200()
+        post = posts12Lines.loadPost1200()
 //---------
         return post
     }

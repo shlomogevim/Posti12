@@ -1881,7 +1881,7 @@ class Posts4Lines {
         val selector=2
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -1903,7 +1903,7 @@ fun loadPost489(): Post {
         val selector=2
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -1925,7 +1925,7 @@ fun loadPost490(): Post {
         val selector=2
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -1948,7 +1948,7 @@ fun loadPost4_900(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -1970,7 +1970,7 @@ fun loadPost4_901(): Post {
         val selector=2
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -1993,7 +1993,7 @@ fun loadPost4_901(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2015,7 +2015,7 @@ fun loadPost4_903(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2037,7 +2037,7 @@ fun loadPost4_904(): Post {
         val selector=2
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2059,7 +2059,7 @@ fun loadPost4_905(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2081,7 +2081,7 @@ fun loadPost4_906(): Post {
         val selector=2
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2104,7 +2104,7 @@ fun loadPost4_907(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2126,7 +2126,7 @@ fun loadPost4_908(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2148,7 +2148,7 @@ fun loadPost4_909(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2171,7 +2171,7 @@ fun loadPost4_909(): Post {
         val selector=2
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2194,7 +2194,7 @@ fun loadPost4_909(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2216,7 +2216,7 @@ fun loadPost4_912(): Post {    //f
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2239,7 +2239,7 @@ fun loadPost4_913(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2261,7 +2261,7 @@ fun loadPost4_914(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2283,7 +2283,7 @@ fun loadPost4_915(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2305,7 +2305,7 @@ fun loadPost4_916(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2328,7 +2328,7 @@ fun loadPost4_917(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2351,7 +2351,7 @@ fun loadPost4_918(): Post {
         val selector=2
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2374,7 +2374,7 @@ fun loadPost4_919(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2397,7 +2397,7 @@ fun loadPost4_920(): Post {  //f
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2419,7 +2419,7 @@ fun loadPost4_921(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -2442,7 +2442,7 @@ fun loadPost4_922(): Post {
         val selector=1
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,0.9f)
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
     }
     return post
 }
@@ -5909,6 +5909,48 @@ fun loadPost4999076(): Post {
         }
         return post
     }
+fun loadPost4_999_079(): Post {
+    var post = Post()
+    with(post) {
+        imageUri ="https://cdn.pixabay.com/photo/2018/07/23/06/10/man-3556090_960_720.jpg"
+        postText = arrayListOf(
+            " חוסר פעילות לא גורמת לך בהכרח  ",
+            "    למנוחה נכונה    ",
+            "  לפעמים צריך יותר פעילות כדי להגיע  ",
+            "     למנוחה נכונה.     "
+        )
+        postTransparency =8
+        postTextSize = arrayListOf(0,15)
+        margin=0
+        val colorIndex=32
+        val selector=1
+        val fontFamily=103
+        postNum= tool.extractPostNumFromFunctionName()
+        post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+    }
+    return post
+}
 
-
+    fun loadPost4_999_080(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2017/05/27/19/22/fly-2349256_960_720.jpg"
+            postText = arrayListOf(
+                " יש גישה האומרת   ",
+                "שאתה צריך למצוא את הדרך שלך בחיים,",
+                "  ויש גישה האומרת  ",
+                "שמספיק שלא תפריע לעצמך לחיות."
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=22
+            val selector=2
+            val grade=81
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
 }

@@ -59,8 +59,9 @@ class Posts1Lines {
             val colorIndex=80
             val selector=1
             val fontFamily=103
+            val grade=80
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
         }
         return post
     }
@@ -77,9 +78,10 @@ class Posts1Lines {
             margin=5
             val colorIndex=39
             val selector=2
+            grade=81
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
         }
         return post
     }

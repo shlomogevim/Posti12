@@ -114,7 +114,33 @@ class Posts9Lines {
         return post
     }
 
-
+fun loadPost906(): Post {
+    var post = Post()
+    with(post) {
+        imageUri = "https://cdn.pixabay.com/photo/2013/11/12/16/37/sun-209495_960_720.jpg"
+        postText = arrayListOf(
+            " יש בך את האש, המים, האדמה, והאוויר ",
+            " תן לאש להיות אש ",
+            " תן למים להיות מים ",
+            " תן לאדמה להיות אדמה ",
+            " תן לאוויר להיות אוויר, ",
+            " יבואו גם ימים אחרים בהם המים יתחילו לכבות את האש ",
+            " האדמה תכסה את האוויר, ",
+            "ואתה תגעגע לזמנים בהם האש היתה אש",
+            " והאוויר היה אוויר. "
+        )
+        postTransparency =3
+        postTextSize = arrayListOf(0,14)
+        margin=0
+        val colorIndex=78
+        val selector=2
+        val grade=82
+        val fontFamily=103
+        postNum= tool.extractPostNumFromFunctionName()
+        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+    }
+    return post
+}
 
 
 

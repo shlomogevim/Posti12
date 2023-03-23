@@ -2200,7 +2200,7 @@ fun loadPost29913(): Post {  //f
         return post
     }
 
-fun loadPost29915(): Post {
+fun loadPost29_915(): Post {
     var post = Post()
     with(post) {
         imageUri = "https://cdn.pixabay.com/photo/2022/08/21/14/55/seagull-7401497_960_720.jpg"
@@ -2213,9 +2213,11 @@ fun loadPost29915(): Post {
         margin=0
         val colorIndex=35
         val selector=2
+        val grade=83
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
-        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,
+            margin,colorIndex,selector,fontFamily,grade)
     }
     return post
 }
@@ -2254,6 +2256,69 @@ fun loadPost29915(): Post {
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
             post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
+    fun loadPost29_918(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2023/03/01/20/07/flowers-7823941_960_720.jpg"
+            postText = arrayListOf(
+                " שהיית כל כך עסוק בחיים ",
+                " שלא נותר בך זמן לחיות אותם. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
+    fun loadPost29_919(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2023/03/11/11/19/bird-7844233_960_720.jpg"
+            postText = arrayListOf(
+                " הכעס מעצב לנו את האישיות ",
+                " האהבה מאפשרת לנו לצאת ממנה. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val grade=80
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,
+                margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
+
+    fun loadPost29_920(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2015/12/25/15/53/girl-1107788_960_720.jpg"
+            postText = arrayListOf(
+                "   לאחרים אתה מייצג מישהו  ",
+                "   לעצמך אתה לא מייצג דבר. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            var grade=81
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
         }
         return post
     }

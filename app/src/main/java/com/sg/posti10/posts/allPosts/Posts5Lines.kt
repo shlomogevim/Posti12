@@ -2376,4 +2376,50 @@ fun loadPost5_999_006(): Post {
     return post
 }
 
+    fun loadPost5_999_007(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2023/01/28/12/18/fog-7750811_960_720.jpg"
+            postText = arrayListOf(
+                " אתה יוצר חיים בכל רגע, ",
+                " בעשייה שלהם  ",
+                " בצורה כזו או אחרת,  ",
+                " ובחוסר עשייה שלהם ",
+                " בטענה כזו או אחרת. "
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+        }
+        return post
+    }
+
+    fun loadPost5_999_008(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2022/06/08/21/10/river-7251241_960_720.jpg"
+            postText = arrayListOf(
+                " מעטים היכולים לשמוע ",
+                " את החיים שלהם עוברים  ",
+                " מבעד לכל ההמולה הזו,  ",
+                " הרוב מסתפקים ",
+                " בלהיות חלק מההמולה הזו. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=10
+            val selector=1
+            val grade=82
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
  }

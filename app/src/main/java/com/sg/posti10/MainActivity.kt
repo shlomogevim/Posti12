@@ -20,9 +20,9 @@ class MainActivity : AppCompatActivity() {
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         supportActionBar?.hide()
 
-//        createPost()
+        createPost()
 
-        createArticle()
+//        createArticle()
 
     }
 
@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         val tool= Tools()
         val constraintLayout = binding.constraintLayout
         val currentPost = FindPost().individualPost ()
+//        logi("MainActivity 38  postNum=${currentPost.postNum}    postId=${currentPost.postId}")
         drawPostHelper.drawPost( constraintLayout, currentPost)
         tool.sendPostToStringFirestore(currentPost)
     }

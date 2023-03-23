@@ -30,6 +30,7 @@ const val POST_FONT_FAMILY="post_fontFamily"
 const val POST_RADIUS="post_radius"
 const val POST_TIME_STAMP="post_time_stamp"
 const val POST_LINE_SPACING = "post_line_spacing"
+const val POST_GRADE = "post_grade"
 const val  POST_VIDEO_URL="post_video_url"
 const val  POST_VIDEO_TEXT="post_video_text"
 

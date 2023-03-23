@@ -26,9 +26,10 @@ class Posts7Lines {
             margin=0
             val colorIndex=10
             val selector=1
+            val grade=77
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
         }
         return post
     }
@@ -483,10 +484,10 @@ class Posts7Lines {
             margin=10
             val colorIndex=10
             val selector=1
+            val grade=82
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily)
-
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
         }
         return post
     }

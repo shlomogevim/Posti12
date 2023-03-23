@@ -30,7 +30,7 @@ class DrawPostHelper: AppCompatActivity() {
     var dis1=0
     fun drawPost( constraintLayout: ConstraintLayout, currentPost: Post) {
         layout=constraintLayout
-        setCurrentParameters(currentPost)
+      setCurrentParameters(currentPost)
       loadImage(constraintLayout, currentPost)
       createText(constraintLayout,currentPost)
 
