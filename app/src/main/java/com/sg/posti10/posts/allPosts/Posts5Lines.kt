@@ -2422,4 +2422,51 @@ fun loadPost5_999_006(): Post {
         }
         return post
     }
+   fun loadPost5_999_009(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2012/06/14/23/14/pigeons-50005_960_720.jpg"
+            postText = arrayListOf(
+                " בחוץ האביב מתארגן על עצמו ",
+                " חמסין ראשון עם ריח פריחה  ",
+                " יונה הומיה בראש עץ התות  ",
+                " ממש כמו כל שנה, ",
+                " ובחדר האוכל מודעה שחנוך איננו. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=20
+            val colorIndex=10
+            val selector=1
+            val grade=84
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
+
+    fun loadPost5_999_010(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2017/11/08/06/13/construction-2929325_960_720.jpg"
+            postText = arrayListOf(
+                " תן לזמן שלך לעבוד ",
+                " הוא טוב בלשטח הרים של בעיות  ",
+                " להחליק את הפסגות המחודדות שלהם ",
+                " ולתת לך דרך נוחה יחסית ",
+                " ולעבור דרכם הלאה. "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,14)
+            margin=5
+            val colorIndex=10
+            val selector=1
+            val grade=82
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
  }

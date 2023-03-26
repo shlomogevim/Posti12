@@ -28,11 +28,12 @@ class FindPost {
 
 //post=posts1Lines.loadPost100()
 //post=posts1Lines.loadPost103()
+//post=posts1Lines.loadPost102()
 //---------
 //        post=posts2Lines.loadPost200()
 //        post=posts2Lines.loadPost299()
 //        post=posts2Lines.loadPost29900()
-//        post=posts2Lines.loadPost29_920()
+//        post=posts2Lines.loadPost29_921()
 //---------
 //              post = posts3Lines.loadPost300()
 //              post = posts3Lines.loadPost390()
@@ -41,7 +42,7 @@ class FindPost {
 //              post = posts3Lines.loadPost3998()
 //              post = posts3Lines.loadPost3999()
 //              post = posts3Lines.loadPost3_999_000()
-//               post = posts3Lines.loadPost3_999_028()
+               post = posts3Lines.loadPost3_999_030()
 //---------
 //        post = posts4Lines.loadPost400()
 //        post = posts4Lines.loadPost490()
@@ -50,15 +51,15 @@ class FindPost {
 //        post = posts4Lines.loadPost4_999_000()
 //        post = posts4Lines.loadPost4999050()
 //           post = posts4Lines.loadPost4999076()
-//        post = posts4Lines.loadPost4_999_080()
+//        post = posts4Lines.loadPost4_999_084()
 //---------
 //        post = posts5Lines.loadPost500()
 //        post = posts5Lines.loadPost599()
 //        post = posts5Lines.loadPost5_999_000()
-//        post = posts5Lines.loadPost5_999_008()
+//        post = posts5Lines.loadPost5_999_010()
 //---------
 //        post = posts6Lines.loadPost600()
-//        post = posts6Lines.loadPost658()
+//        post = posts6Lines.loadPost659()
 
 //---------
 //        post = posts7Lines.loadPost700()
@@ -75,7 +76,7 @@ class FindPost {
 //---------
 //        post = posts11Lines.loadPost1100()
 //---------
-        post = posts12Lines.loadPost1200()
+//        post = posts12Lines.loadPost1200()
 //---------
         return post
     }

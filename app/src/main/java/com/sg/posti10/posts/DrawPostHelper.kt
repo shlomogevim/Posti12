@@ -118,6 +118,8 @@ class DrawPostHelper: AppCompatActivity() {
         val typeface = helper.getFamilyFont(post.postFontFamily)
         textView.typeface = ResourcesCompat.getFont(layout.context, typeface)
 
+//        logi("DrawPostHelper 121  post.lineSpacing=${post.lineSpacing}")
+
         textView.setLineSpacing(0f, post.lineSpacing)
 /*
   if (post.lineSpacing==0.9f){

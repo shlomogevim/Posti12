@@ -66,7 +66,7 @@ class Tools {
     private fun getPostData(post: Post): HashMap<String, Any> {
         val data = hashMapOf(
             POST_ID to post.postId,
-            POST_NUM to post.postNum.toString(),
+            POST_NUM to post.postNum,
             POST_LINE_NUM to post.lineNum,
             POST_IMAGE_URI to post.imageUri,
             POST_TEXT to post.postText,

@@ -9,6 +9,9 @@ class Posts6Lines {
       val tool= Tools()
       val demi= DemiPost()
        var margin=0
+    fun logi(message: String) {
+        Log.i("gg", message)
+    }
     fun loadPost600(): Post {
         var post = Post()
         with(post) {
@@ -1378,7 +1381,36 @@ fun loadPost658(): Post {
     }
     return post
 }
-    fun logi(message: String) {
-        Log.i("gg", message)
+
+
+    fun loadPost659(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2017/10/01/17/22/goose-game-2806291_960_720.jpg"
+            postText = arrayListOf(
+                " ההיגיון האנושי ",
+                " בא לשים סדר איזשהו בחיים ",
+                " הוא לא נועד להבין את החיים,  ",
+                " זה כמו ההבדל בין:  ",
+                "   לסדר קוביות משחק,   ",
+                "  ולהבין שאחרי הכל זה כולו משחק.  "
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val fontFamily=103
+            val grade=82
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,
+                colorIndex,selector,fontFamily,grade)
+        }
+        return post
     }
+
+
+
+
+
  }

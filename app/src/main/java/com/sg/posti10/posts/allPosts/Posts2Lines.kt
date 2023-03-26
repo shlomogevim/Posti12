@@ -2216,6 +2216,8 @@ fun loadPost29_915(): Post {
         val grade=83
         val fontFamily=103
         postNum= tool.extractPostNumFromFunctionName()
+      /*  post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,
+            margin,colorIndex,selector,fontFamily,grade)*/
         post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,
             margin,colorIndex,selector,fontFamily,grade)
     }
@@ -2316,6 +2318,27 @@ fun loadPost29_915(): Post {
             val colorIndex=28
             val selector=1
             var grade=81
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
+
+    fun loadPost29_921(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2020/06/29/12/11/snail-5352510_960_720.jpg"
+            postText = arrayListOf(
+                "   החופש בחיים הוא  ",
+                "   להבין שאתה לא מבין. "
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=28
+            val selector=1
+            var grade=82
             val fontFamily=103
             postNum= tool.extractPostNumFromFunctionName()
             post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)

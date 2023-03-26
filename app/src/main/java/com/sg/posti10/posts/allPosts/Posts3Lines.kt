@@ -4400,4 +4400,48 @@ fun loadPost3999011(): Post {
         }
         return post
     }
+
+    fun loadPost3_999_029(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2019/01/21/12/47/burger-3946012_960_720.jpg"
+            postText = arrayListOf(
+                " יש אנשים שההבדל היחידי ",
+                " בין היותם חיים או מתים ",
+                "הוא כמות הג'נק פוד שהם צורכים.",
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0,16)
+            margin=2
+            val colorIndex=28
+            val selector=1
+            val grade=79
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
+
+    fun loadPost3_999_030(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2021/04/04/11/53/cap-6149857_960_720.jpg"
+            postText = arrayListOf(
+                " אם קשה לראות ",
+                " את המציאות כמו שהיא ",
+                "  ההבעיה היא לא במציאות. ",
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=28
+            val selector=1
+            val grade=83
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
  }

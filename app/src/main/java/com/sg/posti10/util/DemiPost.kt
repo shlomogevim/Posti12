@@ -71,7 +71,7 @@ class DemiPost {
 
   fun demiPost100(postNum: Int, imageUri: String, postText: ArrayList<String>,
                          postTransparency: Int, postTextSize: ArrayList<Int>, margin: Int,colorIndex:Int,
-                         selector: Int,fontFamily:Int,grade:Int=50,lineSpacing:Float=1f,postId:Int=40): Post {
+                         selector: Int,fontFamily:Int,grade:Int=50,lineSpacing:Float=1.4f,postId:Int=40): Post {
       val post = Post()
       with(post) {
           getColors(colorIndex)
@@ -101,7 +101,7 @@ class DemiPost {
 
     fun demiPost200(postNum: Int, imageUri: String, postText: ArrayList<String>,
                     postTransparency: Int, postTextSize: ArrayList<Int>, margin: Int,colorIndex:Int, selector: Int,
-                    fontFamily:Int,grade:Int=50,lineSpacing:Float=1f,postId:Int=40): Post {
+                    fontFamily:Int,grade:Int=50,lineSpacing:Float=1.4f,postId:Int=40): Post {
         val post = Post()
         with(post) {
             getColors(colorIndex)

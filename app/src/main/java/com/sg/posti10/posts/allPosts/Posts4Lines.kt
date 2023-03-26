@@ -5953,4 +5953,97 @@ fun loadPost4_999_079(): Post {
         }
         return post
     }
+
+    fun loadPost4_999_081(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2017/08/05/22/29/gorilla-2586193_960_720.jpg"
+            postText = arrayListOf(
+                " המחשבות שלי על העולם   ",
+                " עוזרות לי אולי להסתדר פה ושם ",
+                "  אבל בדרך כלל  ",
+                " מפריעות לראות אותו כמו שהוא."
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=23
+            val selector=1
+            val grade=80
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
+
+    fun loadPost4_999_082(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_960_720.jpg"
+            postText = arrayListOf(
+                " בדרך כלל   ",
+                " כל הדבר שיכול לשאת אותך  ",
+                "  לרגע מעבר לאישיות שלך  ",
+                " מבורך."
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=23
+            val selector=2
+            val grade=79
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
+
+    fun loadPost4_999_083(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2021/03/26/16/39/fog-6126432_960_720.jpg"
+            postText = arrayListOf(
+                " המילים שאתה אומר  ",
+                " בשבילך זה מה שאתה מתכוון להגיד  ",
+                "  בשביל אחרים זה מה שאתה,  ",
+                " במרחק בין שני השבילים האלה אתה חי."
+            )
+            postTransparency =5
+            postTextSize = arrayListOf(0,15)
+            margin=0
+            val colorIndex=23
+            val selector=1
+            val grade=79
+            val fontFamily=103
+            val lineSpacing=1.2f
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade,lineSpacing)
+        }
+        return post
+    }
+
+    fun loadPost4_999_084(): Post {
+        var post = Post()
+        with(post) {
+            imageUri ="https://cdn.pixabay.com/photo/2016/12/03/09/54/loneliness-1879453_960_720.jpg"
+            postText = arrayListOf(
+                " עשרה קבין של מודעות  ",
+                " ניתנים לאדם בכל יום, ",
+                "  תשתדל שלא לבזבז את כולם   ",
+                " על כעסים, מחשבות שווא והבלים."
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0,16)
+            margin=5
+            val colorIndex=45
+            val selector=1
+            val grade=81
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
 }
