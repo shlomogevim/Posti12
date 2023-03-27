@@ -6069,26 +6069,5 @@ fun loadPost4_999_079(): Post {
         }
         return post
     }
-    fun loadPost4_999_086(): Post {
-        var post = Post()
-        with(post) {
-            imageUri ="https://cdn.pixabay.com/photo/2014/09/21/17/56/mountaineering-455338_960_720.jpg"
-            postText = arrayListOf(
-                " קח אדם   ",
-                " תפיל אותו מראש הר ",
-                "  הוא יישאר בדרך כלל אותו אדם   ",
-                " רק עם גפיים שבורות. "
-            )
-            postTransparency =10
-            postTextSize = arrayListOf(0,16)
-            margin=0
-            val colorIndex=45
-            val selector=1
-            val grade=76
-            val fontFamily=103
-            postNum= tool.extractPostNumFromFunctionName()
-            post=demi.demiPost100(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
-        }
-        return post
-    }
+
 }
