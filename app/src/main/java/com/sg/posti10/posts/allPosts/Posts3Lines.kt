@@ -4444,4 +4444,26 @@ fun loadPost3999011(): Post {
         }
         return post
     }
+
+    fun loadPost3_999_031(): Post {
+        var post = Post()
+        with(post) {
+            imageUri = "https://cdn.pixabay.com/photo/2023/03/14/12/41/wheat-7852286_960_720.jpg"
+            postText = arrayListOf(
+                " וחנוך היה אומר: ",
+                " החיים זו עבודה, ",
+                "  עבודה טובה. ",
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0,16)
+            margin=0
+            val colorIndex=28
+            val selector=1
+            val grade=83
+            val fontFamily=103
+            postNum= tool.extractPostNumFromFunctionName()
+            post=demi.demiPost200(postNum,imageUri,postText,postTransparency,postTextSize,margin,colorIndex,selector,fontFamily,grade)
+        }
+        return post
+    }
  }
